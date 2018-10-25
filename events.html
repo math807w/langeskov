@@ -23,6 +23,17 @@
             font-size:.9em;
         }
 
+        /* Mac Scrollbar */
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0,0,0,.5);
+            -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+        }
+
         /* Events layout */
         .event-wrapper{
             height:100%;
@@ -56,7 +67,7 @@
             left: 0;
             top: 0;
             width: 100%; /* Full width */
-            height: calc(100% - 50px); /* Full height */
+            height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0, 0, 0); /* Fallback color */
             background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
@@ -69,46 +80,108 @@
             padding: 0;
             border: 1px solid #888;
             width: 80%;
+            height:calc(100% - 100px);
+        }
+
+        .modal-content .modal-left-col{
+            float:left;
+            height:100%;
+            width:70%;
+        }
+
+        .modal-content .modal-right-col{
+            float: left;
+            height:100%;
+            width:30%;
         }
 
         .modal-content .event-img{
-            width:70%;
-            height:400px;
+            width:100%;
+            height:50%;
             background: url("img/kvindehjemmet.jpg") no-repeat top center;
             background-size: cover;
+            float:left;
         }
 
         .modal-content .modal-text{
-            width:50%;
-            padding:0 0 0 10%;
-            margin:64px 0;
+            width:70%;
+            padding:10px 30px;
+            margin:-20% calc(15% - 30px); 64px calc(15% - 30px);
+            background: #fff;
+            height:60%;
+            overflow-y: scroll;
+            float:left;
         }
 
-        .modal-content .modal-text h2{
+        .modal-content .modal-info{
+            width:calc(100% - 2 * 30px);
+            padding:40px 30px;
+            overflow: auto;
+            height:calc(50% - 2 * 40px);
+            background-color:#4267b2;
+            color:#fff;
+        }
+
+        .modal-content .modal-antal {
+            width:calc(100% - 2 * 30px);
+            padding:40px 30px;
+            overflow: auto;
+            height:calc(50% - 2 * 40px);
+
+        }
+
+        .modal-content h2{
         font-size:1.6em;
+            line-height: 1.1;
         }
 
-        .modal-content .modal-text p {
+        .modal-content h3{
+            text-transform: uppercase;
+        }
+
+        .modal-content h4{
+            margin:30px 0 -2px 0;
+            line-height: 0;
+            text-decoration: underline;
+        }
+
+        .modal-content .modal-info p {
         font-size:1em;
         }
 
-        /* The Close Button */
+        /* Luk-knappen */
         .close {
             color: #aaaaaa;
-            float: right;
+            position: absolute;
+            top:-3px;
+            right:calc(10% - 10px);
             font-size: 28px;
             font-weight: bold;
             margin-right:10px;
-            padding:10px;
-            background: #000;
+            padding:10px 18px;
+            background: #fff;
+            margin-top:54px;
+            display: inline;
         }
 
         .close:hover,
         .close:focus {
-            color: #fff;
+            color: #111;
             text-decoration: none;
             cursor: pointer;
         }
+
+        #event-input-antal{
+            width:60px;
+            text-align: center;
+            padding:12px 0;
+            font-size: 1.4em;
+        }
+
+        #event-input-antal-submit  {
+
+        }
+
     </style>
 
 </head>
@@ -128,14 +201,35 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="event-img"></div>
-            <div class="modal-text">
-                <h2>Dette er et event</h2>
-                <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?
-                    Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?<br/><br/>
-                    Hvem ved om dette er et event? Måske det bedste event du nogensinde kommer til at opleve.
-                    Hvem ved om dette er et event? Måske det bedste event du nogensinde kommer til at opleve.
-                </p>
+            <div class="modal-left-col">
+                <div class="event-img"></div>
+                <div class="modal-text">
+                    <h2>Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2>
+                    <p>I Jussi Adler Olsens bog Journal 64 omtales anstalten på Sprogø, men at der virkeligt har eksisteret en anstalt for seksuelt løsagtige kvinder på øen, er der sikkert mange der ikke ved.</p>
+                    <p>Filmatiseringen af bogen kommer til efteråret og Langeskov Borgerforening vil gerne give sine medlemmer mulighed for at hører om de virkelige skæbner og historier fra øen.</p>
+                    <p>Christian Keller, overlæge ved de Keller’ske anstalter, oprettede i 1923 internatet på Sprogø for åndssvage, seksuelt løsagtige kvinder. Internatet eksisterede til 1961. Keller var også initiativtageren til Lov om Adgang til Sterilisation i 1929, Europas første racehygiejniske lov. Allerede i 1911 havde Keller fået oprettet et tilsvarende internat for mænd på Livø.</p>
+                    <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
+                    <p>Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.</p>
+                    <p>Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004 beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske Øer.</p>
+                </div>
+            </div>
+            <div class="modal-right-col">
+                <div class="modal-info">
+                    <h3>Information</h3>
+                    <h4>Tid:</h4>
+                    <p>31. oktober 2018, kl. 19.00</p>
+                    <h4>Sted: </h4>
+                    <p>Daginstitution Mælkevejen, Grønvangen 32, 5550 Langeskov</p>
+                    <h4>Pris: </h4>
+                    <p>DKK 50,-</p>
+                </div>
+                <div class="modal-antal">
+                    <h3>Antal</h3>
+                    <form>
+                        <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                        <input type="button" id="event-input-antal-submit" value="Fortsæt">
+                    </form>
+                </div>
             </div>
         </div>
 
