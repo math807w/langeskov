@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+
+    <style type="text/css">
+        *{
+
+        }
+        html{
+            font-family: "Helvetica Neue", sans-serif;
+        }
+        h1{
+            font-size:1.4em;
+        }
+        h2{
+            font-size:1.2em;
+            line-height:.8;
+
+        }
+        p{
+            font-size:.9em;
+        }
+
+        /* Events layout */
+        .event-wrapper{
+            height:100%;
+            width:20%;
+            border:1px solid black;
+        overflow: auto;
+        }
+
+        .event-wrapper .event-img{
+            width:100%;
+            height:150px;
+            background: url("img/kvindehjemmet.jpg") no-repeat top center;
+            background-size: cover;
+        }
+
+        .event-content{
+            padding:10px 20px;
+        }
+        .event-content button{
+            padding:15px 0;
+            width:100%;
+            font-size:1em;
+        }
+
+        /* Modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 50px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: calc(100% - 50px); /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .modal-content .event-img{
+            width:70%;
+            height:400px;
+            background: url("img/kvindehjemmet.jpg") no-repeat top center;
+            background-size: cover;
+        }
+
+        .modal-content .modal-text{
+            width:50%;
+            padding:0 0 0 10%;
+            margin:64px 0;
+        }
+
+        .modal-content .modal-text h2{
+        font-size:1.6em;
+        }
+
+        .modal-content .modal-text p {
+        font-size:1em;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right:10px;
+            padding:10px;
+            background: #000;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="event-wrapper">
+    <div class="event-img"></div>
+    <div class="event-content">
+        <h2>Dette er et event</h2>
+        <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
+        <button id="myBtn">Læs mere</button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="event-img"></div>
+            <div class="modal-text">
+                <h2>Dette er et event</h2>
+                <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?
+                    Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?<br/><br/>
+                    Hvem ved om dette er et event? Måske det bedste event du nogensinde kommer til at opleve.
+                    Hvem ved om dette er et event? Måske det bedste event du nogensinde kommer til at opleve.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</div>
+
+
+</body>
+</html>
