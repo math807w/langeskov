@@ -1,0 +1,177 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    font-family: "Helvetica Neue", sans-serif;
+}
+h1{
+    font-size:1.4em;
+}
+h2{
+    font-size:1.2em;
+    line-height:.8;
+
+}
+p{
+    font-size:.9em;
+}
+
+/* Mac Scrollbar */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* Events layout */
+.event-wrapper{
+    height:100%;
+    width:20%;
+    border:1px solid black;
+    overflow: auto;
+}
+
+.event-wrapper .event-img{
+    width:100%;
+    height:150px;
+    background: url("img/kvindehjemmet.jpg") no-repeat top center;
+    background-size: cover;
+}
+
+.event-content{
+    padding:10px 20px;
+}
+.event-content button{
+    padding:15px 0;
+    width:100%;
+    font-size:1em;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height:calc(100% - 100px);
+}
+
+.modal-content .modal-left-col{
+    float:left;
+    height:100%;
+    width:70%;
+}
+
+.modal-content .modal-right-col{
+    float: left;
+    height:100%;
+    width:30%;
+}
+
+.modal-content .event-img{
+    width:100%;
+    height:50%;
+    background: url("img/kvindehjemmet.jpg") no-repeat top center;
+    background-size: cover;
+    float:left;
+}
+
+.modal-content .modal-text{
+    width:70%;
+    padding:10px 30px;
+    margin:-20% calc(15% - 30px) 64px calc(15% - 30px);
+    background: #fff;
+    height:60%;
+    overflow-y: scroll;
+    float:left;
+}
+
+.modal-content .modal-info{
+    width:calc(100% - 2 * 30px);
+    padding:40px 30px;
+    overflow: auto;
+    height:calc(50% - 2 * 40px);
+    background-color:#4267b2;
+    color:#fff;
+}
+
+.modal-content .modal-antal {
+    width:calc(100% - 2 * 30px);
+    padding:40px 30px;
+    overflow: auto;
+    height:calc(50% - 2 * 40px);
+
+}
+
+.modal-content h2{
+    font-size:1.6em;
+    line-height: 1.1;
+}
+
+.modal-content h3{
+    text-transform: uppercase;
+}
+
+.modal-content h4{
+    margin:30px 0 -2px 0;
+    line-height: 0;
+    text-decoration: underline;
+}
+
+.modal-content .modal-info p {
+    font-size:1em;
+}
+
+/* Luk-knappen */
+.close {
+    color: #aaaaaa;
+    position: absolute;
+    top:-3px;
+    right:calc(10% - 10px);
+    font-size: 28px;
+    font-weight: bold;
+    margin-right:10px;
+    padding:10px 18px;
+    background: #fff;
+    margin-top:54px;
+    display: inline;
+}
+
+.close:hover,
+.close:focus {
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#event-input-antal{
+    width:60px;
+    text-align: center;
+    padding:12px 0;
+    font-size: 1.4em;
+}
+
+#event-input-antal-submit  {
+
+}
