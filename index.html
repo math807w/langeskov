@@ -5,86 +5,124 @@
     <title>Langeskov Borgerforening</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
-    #top-menu{
-        width:100%;
-        height:90px;
-        padding:10px 0;
-    }
-    #top-menu #top-logo{
-        height:100%;
-        float:left;
-    }
-    #top-menu #top-logo img{
-        height:100%;
-        padding:0 10px;
-    }
-    nav {
-        margin-left:auto;
-        margin-right:auto;
-        background-color: #eee;
-        padding: 5px 0;
-        height: 38px;
-        width: 100%;
-        font-weight: bold;
-        text-align: center;
-    }
-    nav ul {
-        list-style: none;
-        text-align: center;
-        display: block;
-        padding: 0px;
-        margin: 0 auto;
-    }
-    nav ul li {
-        list-style-type: none;
-        text-align: center;
-        margin: 0px;
-        display: inline-block;
-    }
-    nav ul li a {
-        text-decoration: none;
-        color: #000;
-        text-align: center;
-        display: block;
-        padding: 10px;
-        margin: 0px;
-    }
-    nav ul li a:hover {
-        color: #CD0000;
-    }
 
-    .slider{
-        width:100%;
-        height:300px;
-        background: #efefef;
-    }
+        #top-logo{
+            grid-column: 2;
+        }
+        #top-logo img{
+            height:120px;
+            padding:20px 0;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 10% 20% 60% 10%;
+            height:calc(120px + 2 * 20px);
+            width:100%;
+        }
+        nav ul{
+            display:flex;
+            grid-column: 3;
+            list-style-type: none;
+            align-items: center;
+        }
+        nav ul a{
+            display: flex;
+            flex:1;
+            align-items: center;
+            justify-content: center;
+            margin:0 10px;
+            height:50px;
+            text-align: center;
+            background-color: #3895D3;
+            color:#fff;
+        }
+        nav ul a li{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        nav ul a:hover {
+            color: #CD0000;
+        }
+
+        .slider{
+            width:100%;
+            height:300px;
+            background: #efefef;
+        }
+
+        .col-3-container {
+            display: grid;
+            grid-template-columns: 10% 25% 25% 25% 10%;
+            text-align: center;
+            grid-column-gap: 5%;
+            justify-content: center;
+            margin-top:64px;
+        }
+        .col-1{
+            grid-column: 2;
+
+            }
+        .col-2{
+            grid-column: 3;
+
+        }
+        .col-3{
+            grid-column: 4;
+
+        }
+        section.col-3-container{
+            height:400px;
+        }
+        section.col-3-container div {
+            background: #CD0000;
+        }
+
+        footer {
+            background: #3895D3;
+            height:250px;
+        }
+
+        footer div{
+            margin-top:32px;
+        }
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <div id="top-logo">
-        <img src="img/bflogo.png">
-    </div>
-    <div id="top-menu">
-
         <nav>
+            <div id="top-logo">
+                <img src="img/bflogo.png">
+            </div>
             <ul>
-                <li>Forside</li>
-                <li>Events</li>
-                <li>Kræmmermarked</li>
-                <li>Kontakt</li>
+                <a href="index.html"><li>Forside</li></a>
+                <a href="index.html"><li>Events</li></a>
+                <a href="index.html"><li>Kræmmermarked</li></a>
+                <a href="index.html"><li>Kontakt</li></a>
             </ul>
         </nav>
-    </div>
     <div class="slider"></div>
 </header>
 
-<section></section>
+<main>
 
+    <section class="col-3-container">
+        <div class="col-1 col-bg">Events</div>
+        <div class="col-2">Kræmmermarkedet</div>
+        <div class="col-3">Kontakt</div>
+    </section>
 
+</main>
 
+<footer class="col-3-container">
+    <div class="col-1">Footer menupunkt 1</div>
+    <div class="col-2">Footer menupunkt 2</div>
+    <div class="col-3">Footer menupunkt 3</div>
+</footer>
 
     <script>
 
