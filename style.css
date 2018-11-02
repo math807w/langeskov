@@ -3,18 +3,19 @@
     margin:0;
 }
 html{
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 h1{
     font-size:1.4em;
 }
 h2{
     font-size:1.2em;
-    line-height:.8;
+    line-height:1;
 
 }
 p{
     font-size:.9em;
+    font-weight:400;
 }
 
 /* Mac Scrollbar */
@@ -74,9 +75,14 @@ nav ul a:hover {
     width:100%;
     height:300px;
     background: #efefef;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider h1{
 }
 
-.col-3-container {
+.three-col-container {
     display: grid;
     grid-template-columns: 10% 25% 25% 25% 10%;
     text-align: center;
@@ -93,11 +99,26 @@ nav ul a:hover {
 .col-3{
     grid-column: 4;
 }
-section.col-3-container{
+section.three-col-container{
     height:400px;
 }
-section.col-3-container div {
-    background: crimson;
+section.three-col-container div {
+    background: ;
+}
+
+/* Forside: Events-card */
+.col-1 #fp-event-img {
+    background-color: coral;
+    height:60%;
+}
+.col-1 .col-title-text{
+    padding-top:1em;
+    text-align: left;
+}
+.col-1 .col-title-text h2{
+    font-size:2em;
+}
+.col-1 .col-title-text p{
 }
 
 footer {
@@ -255,5 +276,19 @@ footer div{
 }
 
 #event-input-antal-submit  {
+
+}
+
+/* --- KRÆMMERMARKED SIDE --- */
+/* Countdown */
+#countdown-timer {
+    text-align: center;
+    font-size: 60px;
+}
+
+#countdown-title {
+    text-align: center;
+    font-size: 60px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 
 }
