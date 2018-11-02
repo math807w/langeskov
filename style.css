@@ -71,9 +71,17 @@ nav ul a:hover {
     text-decoration: underline;
 }
 /* ------------imageslider--------- */
+.slider{
+    width:100%;
+    background: #efefef;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-banner {
 		margin: 0 auto;
-		max-width: 1200px;
+		max-width: 80%;
 		width: 100%;
 		height: 400px;
 		background-color: #fff;
@@ -175,22 +183,12 @@ nav ul a:hover {
 	background-repeat: no-repeat;
 }
 
-.slider{
-    width:100%;
-    height:300px;
-    background: #efefef;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider h1{
-}
-
+/* Kolonner */
 .three-col-container {
     display: grid;
     grid-template-columns: 10% 25% 25% 25% 10%;
     text-align: center;
-    grid-column-gap: 5%;
+    grid-column-gap: 2.5%;
     justify-content: center;
     margin-top:64px;
 }
