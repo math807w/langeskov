@@ -11,11 +11,12 @@ h1{
 h2{
     font-size:1.2em;
     line-height:1;
-
+    text-align: left;
 }
 p{
     font-size:.9em;
     font-weight:400;
+    text-align: left;
 }
 
 /* Mac Scrollbar */
@@ -183,7 +184,7 @@ nav ul a:hover {
 	background-repeat: no-repeat;
 }
 
-/* Kolonner */
+/* --- Kolonner --- */
 .three-col-container {
     display: grid;
     grid-template-columns: 10% 25% 25% 25% 10%;
@@ -205,23 +206,35 @@ section.three-col-container{
     height:400px;
 }
 section.three-col-container div {
-    background: ;
+
 }
 
 /* Forside: Events-card */
+
 .col-1 #fp-event-img {
     background-color: coral;
     height:60%;
 }
-.col-1 .col-title-text{
+.col-2 #fp-kraemmer-img {
+    background-color: coral;
+    height:60%;
+}
+.col-3 #fp-kontakt-img {
+    background-color: coral;
+    height:60%;
+}
+
+.three-col-container .col-title-text{
     padding-top:1em;
     text-align: left;
 }
-.col-1 .col-title-text h2{
-    font-size:2em;
+.three-col-container .col-title-text h2{
+    font-size:1.6em;
 }
-.col-1 .col-title-text p{
+.three-col-container .col-title-text p{
 }
+
+
 
 footer {
     background: #3895D3;
