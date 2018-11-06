@@ -430,12 +430,29 @@ footer div{
 /* Countdown */
 #countdown-timer {
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	color: white;
 }
 
 #countdown-title {
     text-align: center;
     font-size: 60px;
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	color: white;
+	
+}
 
+#year{
+	text-align: center;
+	font-size: 80px;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	color: white;
+
+}
+
+#countdown-wrapper{
+	background-image: url("img/Krmmermarked.jpg");
+	background-size: cover;
+	opacity: 80%;
 }
