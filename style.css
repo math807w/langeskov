@@ -289,13 +289,44 @@ section.three-col-container div {
 
 footer {
     padding:0 10%;
-    background: #3895D3;
-    height:250px;
+    background: #00A572;  
 }
 
 footer div{
     margin-top:32px;
 }
+
+/*-----styling af kontakt formular-------*/
+.contact-form{
+	margin-top: 0;
+}
+.form-control{
+	width: 90%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #000000;
+	font-size: 1,2em;
+	margin-bottom: 12px;
+	
+}
+input {
+	height: 30px;
+}
+
+form .submit {
+	color: #fff;
+	background-color: #FD6F26;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 2em;
+}
+form .submit:hover{
+	background-color: #D36709;
+	cursor: pointer;
+}
+
 
 /* --- EVENTS SIDE --- */
 /* Events layout */
