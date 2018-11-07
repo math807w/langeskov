@@ -336,34 +336,34 @@ section.three-col-container div {
 }
 
 .slide:nth-child(1){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/bccatering.png")
+	background-image: url("img/sponsorer/bccatering.png")
 }
 .slide:nth-child(2){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/royal-unibrew.jpg")
+	background-image: url("img/sponsorer/royal-unibrew.jpg")
 }
 .slide:nth-child(3){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/nordisktivoli.jpg")
+	background-image: url("img/sponsorer/nordisktivoli.jpg")
 }
 .slide:nth-child(4){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/superbrugsen.jpg")
+	background-image: url("img/sponsorer/superbrugsen.jpg")
 }
 .slide:nth-child(5){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/xlbyg.jpg")
+	background-image: url("img/sponsorer/sponsorer/xlbyg.jpg")
 }
 .slide:nth-child(6){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/schmidtsradio.png")
+	background-image: url("img/sponsorer/schmidtsradio.png")
 }
 .slide:nth-child(7){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/renofyn.png")
+	background-image: url("img/sponsorer/renofyn.png")
 }
 .slide:nth-child(8){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/kertemindekommune.png")
+	background-image: url("img/sponsorer/kertemindekommune.png")
 }
 .slide:nth-child(9){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/maagaarddata.png")
+	background-image: url("img/sponsorer/maagaarddata.png")
 }
 .slide:nth-child(10){
-	background-image: url("../../../Desktop/sponsorer slider/sponsorer/mogensschack.jpg")
+	background-image: url("img/sponsorer/mogensschack.jpg")
 }
 .slide:nth-child(11){
 	background-image: url("img/sponsorer/hejtex.jpg")
