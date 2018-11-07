@@ -267,11 +267,12 @@ section.three-col-container div {
     height:60%;
 	background-image: url(images/1.jpg);
 	background-size: cover;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	border-radius: 8px;
+	
 }
 #fp-col-1 {
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	padding: 8px;
 	border-radius: 8px;
 }
@@ -280,11 +281,11 @@ section.three-col-container div {
     height:60%;
 	background-image: url(images/2.jpg);
 	background-size: cover;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	border-radius: 8px;
 }
 #fp-col-2 {
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	padding: 8px;
 	border-radius: 8px;
 }
@@ -294,11 +295,11 @@ section.three-col-container div {
     height:60%;
 	background-image: url(images/3.jpg);
 	background-size: cover;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	border-radius: 8px;
 }
 #fp-col-3 {
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	padding: 8px;
 	border-radius: 8px;
 }
