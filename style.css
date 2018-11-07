@@ -537,11 +537,12 @@ form .submit:hover{
   -o-transform:rotate(90deg); /* Opera */
   margin-top: 300px;
   right: 0;
+	  z-index: 9999;
 
 }
 
 #sectiontohide {
-	background:white;
+  background:white;
 	width:400px;
 	height: 500px;
 	overflow: scroll;
@@ -551,6 +552,7 @@ form .submit:hover{
   margin-right: -50px;
   display: none;
   position: fixed;
+z-index: 9999;
 
 	
 }
