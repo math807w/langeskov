@@ -250,7 +250,7 @@ padding:0  10%;
     margin-top:64px;
 }
 .three-col{
-    overflow: auto;
+    overflow: hidden;
 }
 
 section.three-col-container{
@@ -296,6 +296,33 @@ footer div{
     margin-top:32px;
 }
 
+footer.three-col-container{
+	color: white;
+	text-align: left;
+	
+}
+
+footer.three-col-container h2{
+	font-size: 1.5em;
+}
+
+footer.three-col-container p{
+	font-size: 1.1em;
+
+}
+
+.info{
+	line-height: 1.4;
+	margin: 0px;
+	
+}
+
+.SoMe img{
+	width: 50px;
+}
+
+
+
 /*-----styling af kontakt formular-------*/
 .contact-form{
 	margin-top: 0;
@@ -308,7 +335,7 @@ footer div{
 	color: #000000;
 	font-size: 1,2em;
 	margin-bottom: 12px;
-	
+	font-family: "Montserrat", "Helvetica Neue", sans-serif
 }
 input {
 	height: 30px;
