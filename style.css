@@ -250,7 +250,7 @@ padding:0  10%;
     margin-top:64px;
 }
 .three-col{
-    overflow: auto;
+    overflow: hidden;
 }
 
 section.three-col-container{
@@ -296,6 +296,33 @@ footer div{
     margin-top:32px;
 }
 
+footer.three-col-container{
+	color: white;
+	text-align: left;
+	
+}
+
+footer.three-col-container h2{
+	font-size: 1.5em;
+}
+
+footer.three-col-container p{
+	font-size: 1.1em;
+
+}
+
+.info{
+	line-height: 1.4;
+	margin: 0px;
+	
+}
+
+.SoMe img{
+	width: 50px;
+}
+
+
+
 /*-----styling af kontakt formular-------*/
 .contact-form{
 	margin-top: 0;
@@ -308,7 +335,7 @@ footer div{
 	color: #000000;
 	font-size: 1,2em;
 	margin-bottom: 12px;
-	
+	font-family: "Montserrat", "Helvetica Neue", sans-serif
 }
 input {
 	height: 30px;
@@ -507,3 +534,55 @@ form .submit:hover{
 	background-size: cover;
 	opacity: 80%;
 }
+
+/* -- peekaboo start*/
+
+  input{
+  cursor:pointer;
+  border: 1px solid #4080ff;
+  border-radius: 8px;
+  font-family: "Gill Sans MT",  Helvetica, "sans-serif";
+  font-size: 20px;
+  color: white;
+  outline: 0;
+  letter-spacing: 5px;
+	/*linear-gradient*/
+  background: #3b5998;
+  margin-right: -60px;
+  position: fixed;
+	
+	
+}
+
+  #rotate{
+  vertical-align:top;
+  margin-top:50px;
+  width:150px;height:45px;
+  transform:rotate(7deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+  margin-top: 300px;
+  right: 0;
+	  z-index: 9999;
+
+}
+
+#sectiontohide {
+  background:white;
+	width:400px;
+	height: 500px;
+	overflow: scroll;
+  right: 0;
+  margin-top: 250px;
+  border-radius: 8px;
+  margin-right: -50px;
+  display: none;
+  position: fixed;
+z-index: 9999;
+
+	
+}
+
+/*---peekaboo slut---*/
