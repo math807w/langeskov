@@ -13,7 +13,7 @@
 	/*linear-gradient*/
   background: #3b5998;
   margin-right: -60px;
-  position: sticky;
+  position: fixed;
 	
 	
 }
@@ -28,7 +28,7 @@
   -webkit-transform:rotate(90deg); /* Safari and Chrome */
   -o-transform:rotate(90deg); /* Opera */
   margin-top: 300px;
-  float: right;
+  right: 0;
 
 }
 
@@ -37,11 +37,12 @@
 	width:400px;
 	height: 500px;
 	overflow: scroll;
-  float: right;
+  right: 0;
   margin-top: 250px;
   border-radius: 8px;
   margin-right: -50px;
   display: none;
+  position: fixed;
 
 	
 }
