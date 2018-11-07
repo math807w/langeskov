@@ -506,3 +506,53 @@ form .submit:hover{
 	background-size: cover;
 	opacity: 80%;
 }
+
+/* -- peekaboo start*/
+
+  input{
+  cursor:pointer;
+  border: 1px solid #4080ff;
+  border-radius: 8px;
+  font-family: "Gill Sans MT",  Helvetica, "sans-serif";
+  font-size: 20px;
+  color: white;
+  outline: 0;
+  letter-spacing: 5px;
+	/*linear-gradient*/
+  background: #3b5998;
+  margin-right: -60px;
+  position: fixed;
+	
+	
+}
+
+  #rotate{
+  vertical-align:top;
+  margin-top:50px;
+  width:150px;height:45px;
+  transform:rotate(7deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+  margin-top: 300px;
+  right: 0;
+
+}
+
+#sectiontohide {
+	background:white;
+	width:400px;
+	height: 500px;
+	overflow: scroll;
+  right: 0;
+  margin-top: 250px;
+  border-radius: 8px;
+  margin-right: -50px;
+  display: none;
+  position: fixed;
+
+	
+}
+
+/*---peekaboo slut---*/
