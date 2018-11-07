@@ -285,7 +285,82 @@ section.three-col-container div {
 .three-col-container .col-title-text p{
 }
 
+/*------sponsorer slideshow--------*/
+#sponsorer {
+	overflow: hidden;
+	height: 410px;
+	width: 728px;
+	margin: 0 auto;
+}
+.slide-wrapper {
+	width: 8008px;
+	-webkit-animation: slide 30s ease infinite;
+}
+.slide {
+	float: left;
+	height: 410px;
+	width: 728px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
+.slide:nth-child(1){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/bccatering.png")
+}
+.slide:nth-child(2){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/royal-unibrew.jpg")
+}
+.slide:nth-child(3){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/nordisktivoli.jpg")
+}
+.slide:nth-child(4){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/superbrugsen.jpg")
+}
+.slide:nth-child(5){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/xlbyg.jpg")
+}
+.slide:nth-child(6){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/schmidtsradio.png")
+}
+.slide:nth-child(7){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/renofyn.png")
+}
+.slide:nth-child(8){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/kertemindekommune.png")
+}
+.slide:nth-child(9){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/maagaarddata.png")
+}
+.slide:nth-child(10){
+	background-image: url("../../../Desktop/sponsorer slider/sponsorer/mogensschack.jpg")
+}
+.slide:nth-child(11){
+	background-image: url("img/sponsorer/hejtex.jpg")
+}
+@-webkit-keyframes slide {
+	4% { margin-left: 0px;}
+	8% { margin-left: -728px;}
+	12% { margin-left: -728px;}
+	16% { margin-left: -1456px;}
+	20% { margin-left: -1465px;}
+	24% { margin-left: -2184px;}
+	28% { margin-left: -2184px;}
+	32% { margin-left: -2912px;}
+	36% { margin-left: -2912px;}
+	40% { margin-left: -3640px;}
+	44% { margin-left: -3640px;}
+	48% { margin-left: -4368px;}
+	52% { margin-left: -4368px;}
+	56% { margin-left: -5096px;}
+	60% { margin-left: -5096px;}
+	64% { margin-left: -5824px;}
+	68% { margin-left: -5824px;}
+	72% { margin-left: -6552px;}
+	78% { margin-left: -6552px;}
+	84% { margin-left: -7280px;}
+	88% { margin-left: -7280px;}
+}
 
 footer {
     padding:0 10%;
