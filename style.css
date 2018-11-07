@@ -510,6 +510,7 @@ form .submit:hover{
     font-size: 80px;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	color: white;
+	text-shadow: 4px 4px black;
 }
 
 #countdown-title {
@@ -517,7 +518,7 @@ form .submit:hover{
     font-size: 60px;
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	color: white;
-	
+	text-shadow: 4px 4px black;
 }
 
 #year{
@@ -525,13 +526,16 @@ form .submit:hover{
 	font-size: 80px;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	color: white;
+	text-shadow: 4px 4px black;
+
 
 }
 
 #countdown-wrapper{
-	background-image: url("img/Krmmermarked.jpg");
+	background-image: url(img/1.jpg);
 	background-size: cover;
-	opacity: 80%;
+	
+
 }
 
 /* -- peekaboo start*/
