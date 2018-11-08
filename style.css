@@ -407,6 +407,8 @@ section.three-col-container div {
 	88% { margin-left: -7280px;}
 }
 
+/*footer*/
+
 footer {
     padding:0 10%;
     background: #00A572;  
@@ -414,6 +416,7 @@ footer {
 
 footer div{
     margin-top:32px;
+	margin-bottom: 10px;
 }
 
 footer.three-col-container{
@@ -439,9 +442,18 @@ footer.three-col-container p{
 
 .SoMe img{
 	width: 50px;
+	margin-top: 0px;
 }
 
+.facebooktext{
+	margin-top: 20px;
+	
+}
 
+.kontaktnavn{
+	margin-top: 0px;
+	margin-bottom: 15px
+}
 
 /*-----styling af kontakt formular-------*/
 .contact-form{
@@ -456,6 +468,7 @@ footer.three-col-container p{
 	font-size: 1,2em;
 	margin-bottom: 12px;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	border-radius: 8px;
 }
 input {
 	height: 30px;
@@ -463,14 +476,16 @@ input {
 
 form .submit {
 	color: #fff;
-	background-color: #FD6F26;
+	background-color: darkorange;
 	font-size: 2em;
 	font-weight: bold;
 	letter-spacing: 2px;
 	height: 2em;
+	border-radius: 8px;
+	width: 6em;
 }
 form .submit:hover{
-	background-color: #D36709;
+	background-color: #FD6F26;
 	cursor: pointer;
 	transition: background-color .25s, color .25s;
 }
