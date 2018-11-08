@@ -61,6 +61,10 @@ p{
 /* FORSIDE */
 header{
     padding:0 2%;
+    box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+    z-index: 9999px;
+    border-radius: 8px;
+
 }
 #top-logo{
     align-self: center;
@@ -139,9 +143,36 @@ nav ul a:hover {
     border-radius: 8px;
 }
 
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+
 main{
 padding:0  10%;
+padding-bottom: 10px;
 }
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+
 /* ------------imageslider--------- */
 .slider{
     width:100%;
@@ -149,10 +180,12 @@ padding:0  10%;
     align-items: center;
     justify-content: center;
     height:300px;
+    padding-top: 20px;
+    
 }
 
 .main-banner {
-		margin: 0 auto;
+		margin: 50px;
 		max-width: 100%;
 		width: 100%;
 		height: 100%;
