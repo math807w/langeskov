@@ -472,8 +472,22 @@ form .submit:hover{
 .event-wrapper .event-img{
     width:100%;
     height:50%;
-    background: url("img/kvindehjemmet.jpg") no-repeat top center;
-    background-size: cover;
+    background-size:cover;
+}
+
+#event1 .event-img {
+	background: url("img/kvindehjemmet.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+#event2 .event-img{
+	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+#event3 .event-img{
+	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat top center;
+	background-size: cover;læ
 }
 
 .event-content{
