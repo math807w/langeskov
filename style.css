@@ -60,7 +60,7 @@ p{
 
 /* FORSIDE */
 header{
-    padding:0 10%;
+    padding:0 2%;
 }
 #top-logo{
     align-self: center;
@@ -70,6 +70,17 @@ header{
     width:auto;
     height:100%;
 }
+
+#kurv img {
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+#kurv{
+    align-self:auto;
+    height:58px;
+}
+
 nav{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -77,6 +88,7 @@ nav{
     width:100%;
     overflow:hidden;
     font-size:.95em;
+    
 }
 nav ul{
     display:grid;
@@ -106,6 +118,8 @@ nav ul a{
 nav a#bliv-medlem {
     background-color: darkorange;
     color:#FFF;
+    box-shadow: 0px 8px 16px 0px grey;
+    border-radius: 8px;
 }
 nav #login-knap {
 
@@ -122,6 +136,7 @@ nav ul a:hover {
     transition: background-color .25s, color .25s;
     background-color: #00A572;
     color:#FFF;
+    border-radius: 8px;
 }
 
 main{
@@ -696,8 +711,11 @@ form .submit:hover{
   display: none;
   position: fixed;
 z-index: 9999;
-
-	
 }
 
 /*---peekaboo slut---*/
+
+/*--nav dropdown start---*/
+
+
+/*--nav dropdown slut---*/
