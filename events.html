@@ -51,7 +51,7 @@
                     <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
                     <button id="myBtn_1">Læs mere</button>
                 </div>
-                <div id="myModal_1" class="modal">
+                <div id="modal1" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close" id="close_1">&times;</span>
@@ -59,32 +59,29 @@
                             <div class="event-img"></div>
                         </div>
                         <div class="modal-right-col">
-                            <div class="modal-info">
-                                <div>
-                                    <h3>Information</h3>
-                                    <h4>Tid:</h4>
-                                    <p>31. oktober 2018, kl. 19.00</p>
-                                    <h4>Sted: </h4>
-                                    <p>Daginstitution Mælkevejen, Grønvangen 32, 5550 Langeskov</p>
-                                    <h4>Pris: </h4>
-                                    <p>DKK 50,-</p>
-                                </div>
-                            </div>
                             <div class="modal-text">
                                 <div>
                                     <h2>Event 1: Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2><br/>
-                                    <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
+                                    <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd... De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
                                     <p>Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.</p>
-                                    <p>Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004 beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske Øer.</p>
                                 </div>
                             </div>
-                            <div class="modal-antal">
+                            <div class="modal-info">
                                 <div>
-                                    <h3>Antal</h3>
+                                    <h3>Vigtige Informationer</h3>
+                                    <h4>Tid:</h4>
+                                    <p>31. oktober 2018, kl. 19.00</p>
+                                    <h4>Sted: </h4>
+                                    <p>Daginstitution Mælkevejen,<br/> Grønvangen 32, 5550 Langeskov</p>
+                                    <h4>Pris: </h4>
+                                    <p>DKK 50,-</p>
+                                    <div id="antal">
+                                    <h3 id="antal-titel">Antal</h3>
                                     <form>
                                         <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                        <input type="button" id="event-input-antal-submit" value="Fortsæt">
+                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
                                     </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +99,7 @@
                     <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
                     <button id="myBtn_2">Læs mere</button>
                 </div>
-                <div id="myModal_2" class="modal">
+                <div id="modal2" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close" id="close_2">&times;</span>
@@ -153,7 +150,7 @@
                     <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
                     <button id="myBtn_3">Læs mere</button>
                 </div>
-                <div id="myModal_3" class="modal">
+                <div id="modal3" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close" id="close_3">&times;</span>
@@ -209,9 +206,9 @@
 
 
         // Get the modal
-        var modal_1 = document.getElementById('myModal_1');
-        var modal_2 = document.getElementById('myModal_2');
-        var modal_3 = document.getElementById('myModal_3');
+        var modal_1 = document.getElementById('modal1');
+        var modal_2 = document.getElementById('modal2');
+        var modal_3 = document.getElementById('modal3');
 
         // Get the button that opens the modal
         var btn_1 = document.getElementById("myBtn_1");
@@ -260,25 +257,43 @@
         }
 
 
-        /*
 
+
+        /*
         var modal_ = document.getElementById('myModal_'+i);
         var btn_ = document.getElementById("myBtn_"+i);
         var span_ = document.getElementById("close_"+i);
-
-        for(i=0;i<4;i++)
-        {
-
-            document.getElementById("myBtn_"+i).onclick = function () {
-                document.getElementById('myModal_'+i).style.display = "block";
-            }
-
-            document.getElementById("close_1").onclick = function () {
-                document.getElementById('myModal_'+i).style.display = "none";
-            }
-        }
-
         */
+/*
+    for(i=1;i<4;i++) {
+        document.getElementById("myBtn_"+i).onclick = function() {
+                document.getElementById("modal"+i).style.display = "block";
+                console.log(i);
+        }();
+        function lol() {
+
+        }
+    }
+document.getElementById("close_"+i).onclick = function () {
+    var d = i;
+    document.getElementById("modal"+c).style.display = "none";
+}
+    /*
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal_1) {
+            modal_1.style.display = "none";
+        }
+        else if(event.target == modal_2){
+            modal_2.style.display = "none";
+        }
+        else if(event.target == modal_3){
+            modal_3.style.display = "none";
+        }
+    }
+*/
+
+        /*
 
 
 
