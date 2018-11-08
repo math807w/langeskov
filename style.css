@@ -60,7 +60,11 @@ p{
 
 /* FORSIDE */
 header{
-    padding:0 10%;
+    padding:0 2%;
+    box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+    z-index: 9999px;
+    border-radius: 8px;
+
 }
 #top-logo{
     align-self: center;
@@ -70,6 +74,17 @@ header{
     width:auto;
     height:100%;
 }
+
+#kurv img {
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+#kurv{
+    align-self:auto;
+    height:58px;
+}
+
 nav{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -77,6 +92,7 @@ nav{
     width:100%;
     overflow:hidden;
     font-size:.95em;
+    
 }
 nav ul{
     display:grid;
@@ -106,6 +122,8 @@ nav ul a{
 nav a#bliv-medlem {
     background-color: darkorange;
     color:#FFF;
+    box-shadow: 0px 8px 16px 0px grey;
+    border-radius: 8px;
 }
 nav #login-knap {
 
@@ -122,15 +140,42 @@ nav ul a:hover {
     transition: background-color .25s, color .25s;
     background-color: #00A572;
     color:#FFF;
+    border-radius: 8px;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
 }
 
 main{
 padding:0  10%;
+padding-bottom: 10px;
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
 }
 
 section{
     margin-top:32px;
 }
+
 /* ------------imageslider--------- */
 .slider{
     width:100%;
@@ -138,10 +183,12 @@ section{
     align-items: center;
     justify-content: center;
     height:300px;
+    padding-top: 20px;
+    
 }
 
 .main-banner {
-		margin: 0 auto;
+		margin: 50px;
 		max-width: 100%;
 		width: 100%;
 		height: 100%;
@@ -410,6 +457,8 @@ section.three-col-container div {
 	88% { margin-left: -7280px;}
 }
 
+/*footer*/
+
 footer {
     padding:0 10%;
     background: #00A572;  
@@ -417,6 +466,7 @@ footer {
 
 footer div{
     margin-top:32px;
+	margin-bottom: 10px;
 }
 
 footer.three-col-container{
@@ -442,9 +492,18 @@ footer.three-col-container p{
 
 .SoMe img{
 	width: 50px;
+	margin-top: 0px;
 }
 
+.facebooktext{
+	margin-top: 20px;
+	
+}
 
+.kontaktnavn{
+	margin-top: 0px;
+	margin-bottom: 15px
+}
 
 /*-----styling af kontakt formular-------*/
 .contact-form{
@@ -458,7 +517,8 @@ footer.three-col-container p{
 	color: #000000;
 	font-size: 1,2em;
 	margin-bottom: 12px;
-	font-family: "Montserrat", "Helvetica Neue", sans-serif
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	border-radius: 8px;
 }
 input {
 	height: 30px;
@@ -466,14 +526,16 @@ input {
 
 form .submit {
 	color: #fff;
-	background-color: #FD6F26;
+	background-color: darkorange;
 	font-size: 2em;
 	font-weight: bold;
 	letter-spacing: 2px;
 	height: 2em;
+	border-radius: 8px;
+	width: 6em;
 }
 form .submit:hover{
-	background-color: #D36709;
+	background-color: #FD6F26;
 	cursor: pointer;
 	transition: background-color .25s, color .25s;
 }
@@ -491,8 +553,26 @@ form .submit:hover{
 .event-wrapper .event-img{
     width:100%;
     height:50%;
-    background: url("img/kvindehjemmet.jpg") no-repeat top center;
-    background-size: cover;
+    background-size:cover;
+}
+
+#event1 .event-img {
+	background: url("img/kvindehjemmet.jpg") no-repeat top center;
+	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+		
+}
+
+#event2 .event-img{
+	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat top center;
+	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+#event3 .event-img{
+	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat top center;
+	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
 .event-content{
@@ -502,6 +582,17 @@ form .submit:hover{
     padding:15px 0;
     width:100%;
     font-size:1em;
+}
+
+.kommendeevents{
+	width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+	font-size: 3em;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif; 
+	
 }
 
 /* ---- MODAL ---- */
@@ -758,8 +849,11 @@ button#event-input-antal-submit  {
   display: none;
   position: fixed;
 z-index: 9999;
-
-	
 }
 
 /*---peekaboo slut---*/
+
+/*--nav dropdown start---*/
+
+
+/*--nav dropdown slut---*/
