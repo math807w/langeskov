@@ -440,7 +440,7 @@ footer.three-col-container p{
 	color: #000000;
 	font-size: 1,2em;
 	margin-bottom: 12px;
-	font-family: "Montserrat", "Helvetica Neue", sans-serif
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 input {
 	height: 30px;
@@ -478,16 +478,20 @@ form .submit:hover{
 #event1 .event-img {
 	background: url("img/kvindehjemmet.jpg") no-repeat top center;
 	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+		
 }
 
 #event2 .event-img{
 	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat top center;
 	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
 #event3 .event-img{
 	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat top center;
-	background-size: cover;læ
+	background-size: cover;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
 .event-content{
@@ -497,6 +501,17 @@ form .submit:hover{
     padding:15px 0;
     width:100%;
     font-size:1em;
+}
+
+.kommendeevents{
+	width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+	font-size: 3em;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif; 
+	
 }
 
 /* Modal */
