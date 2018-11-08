@@ -465,6 +465,7 @@ form .submit:hover{
 /* Events layout */
 .event-wrapper{
     height:100%;
+    max-height:400px;
     border:1px solid black;
 
 }
@@ -513,48 +514,59 @@ form .submit:hover{
 .modal-content .modal-left-col{
     float:left;
     height:100%;
-    width:70%;
+    width:50%;
 }
 
 .modal-content .modal-right-col{
     float: left;
     height:100%;
-    width:30%;
+    width:50%;
 }
 
 .modal-content .event-img{
     width:100%;
-    height:50%;
+    height:100%;
     background: url("img/kvindehjemmet.jpg") no-repeat top center;
     background-size: cover;
     float:left;
 }
 
 .modal-content .modal-text{
-    width:70%;
-    padding:10px 30px;
-    margin:-20% calc(15% - 30px) 64px calc(15% - 30px);
+    width:100%;
     background: #fff;
-    height:60%;
-    overflow-y: scroll;
+    height:45%;
+    overflow:hidden;
     float:left;
 }
 
+.modal-content .modal-text div{
+    padding:2em;
+}
+
 .modal-content .modal-info{
-    width:calc(100% - 2 * 30px);
-    padding:40px 30px;
+    width:100%;
     overflow: auto;
-    height:calc(50% - 2 * 40px);
+    height:35%;
     background-color:#4267b2;
     color:#fff;
 }
 
-.modal-content .modal-antal {
-    width:calc(100% - 2 * 30px);
-    padding:40px 30px;
-    overflow: auto;
-    height:calc(50% - 2 * 40px);
+.modal-content .modal-info div {
+    padding:2em;
+}
 
+.modal-content .modal-antal {
+    width:100%;
+    overflow: hidden;
+    height:20%;
+}
+
+.modal-content .modal-antal div{
+    padding:2em;
+}
+
+.modal-content h2, h3, h4{
+    text-align:left;
 }
 
 .modal-content h2{
@@ -567,8 +579,8 @@ form .submit:hover{
 }
 
 .modal-content h4{
-    margin:30px 0 -2px 0;
-    line-height: 0;
+    margin:12px 0 2px 0;
+    line-height: 1;
     text-decoration: underline;
 }
 
