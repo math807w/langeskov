@@ -61,7 +61,7 @@ p{
 /* FORSIDE */
 header{
     padding:0 2%;
-    box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+    box-shadow: 0 2px 6px 0 grey, 0 4px 15px 0 lightgrey;
     z-index: 9999px;
     border-radius: 8px;
 
@@ -737,6 +737,7 @@ z-index: 9999;
 /*---peekaboo slut---*/
 
 /*--nav dropdown start---*/
+
 
 
 /*--nav dropdown slut---*/
