@@ -26,6 +26,7 @@
             <a href="kraemmer.html"><li>Kræmmermarked</li></a>
             <a href="#"><li>Om os</li></a>
             <a href="#"><li>Kontakt</li></a>
+            <a class="" id="kurv" href="#"><li><img src="images/kurv.png"></li></a>
         </ul>
         <ul id="login-menu">
             <a class="" id="login-knap" href="#"><li>Login</li></a>
@@ -40,23 +41,27 @@
 	        <h1>Kommende events</h1>
 	</div>
 
-    <section class="three-col-container" style="min-height:600px;">
+    <section class="three-col-container" style="margin-bottom:400px;">
 
         <!-- ** EVENT NUMMER 1 ** -->
-        <div class="three-col">
-            <div class="event-wrapper" id="event1">
-                <div class="event-img"></div>
-                <div class="event-content">
-                    <h2>Dette er et event</h2>
-                    <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
-                    <button id="myBtn_1">Læs mere</button>
+        <div class="three-col" id="event1">
+            <button id="myBtn_1">
+                <div class="card-img">
+                    <div class="col-title-text">
+                        <h3>Foredrag med Carsten Egø Nielsen</h3>
+                            <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne.
+
+                        </p>
+                            <a href="#" class="event-link">Læs mere</a>
+                    </div>
                 </div>
+            </button>
                 <div id="modal1" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close" id="close_1">&times;</span>
                         <div class="modal-left-col">
-                            <div class="event-img"></div>
+                            <div class="event-img" id="modal1-img"></div>
                         </div>
                         <div class="modal-right-col">
                             <div class="modal-text">
@@ -88,50 +93,53 @@
                     </div>
                 </div>
             </div>
-        </div>
 
         <!-- ** EVENT NUMMER 2 ** -->
-        <div class="three-col">
-            <div class="event-wrapper" id="event2">
-                <div class="event-img"></div>
-                <div class="event-content">
-                    <h2>Dette er et event</h2>
-                    <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
-                    <button id="myBtn_2">Læs mere</button>
+        <div class="three-col" id="event2">
+            <button id="myBtn_2">
+                <div class="card-img">
+                    <div class="col-title-text">
+
+                            <h3>Juletur til Århus</h3>
+                            <p>Årets juletur går til »Den Gamle By« i Århus. Tag med og oplev julestemningen som
+                                den var på mormor og morfars tid.
+                            </p>
+                            <a href="#" class="event-link">Læs mere</a>
+                    </div>
                 </div>
-                <div id="modal2" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close" id="close_2">&times;</span>
-                        <div class="modal-left-col">
-                            <div class="event-img"></div>
+            </button>
+            <div id="modal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="close_2">&times;</span>
+                    <div class="modal-left-col">
+                        <div class="event-img" id="modal2-img"></div>
+                    </div>
+                    <div class="modal-right-col">
+                        <div class="modal-text">
+                            <div>
+                                <h2>Event 2: Juletur til Århus</h2><br/>
+                                <p>Årets juletur går til »Den Gamle By« i Århus. Tag med og oplev julestemningen som
+                                den var på mormor og morfars tid. </p>
+                                <p>Har man ikke lyst til at tage i »Den Gamle By« er
+                                man velkommen til at tage med bussen til Århus og bruge dagen på egen hånd i
+                                Århus.</p>
+                            </div>
                         </div>
-                        <div class="modal-right-col">
-                            <div class="modal-info">
-                                <div>
-                                    <h3>Information</h3>
-                                    <h4>Tid:</h4>
-                                    <p>31. oktober 2018, kl. 19.00</p>
-                                    <h4>Sted: </h4>
-                                    <p>Daginstitution Mælkevejen, Grønvangen 32, 5550 Langeskov</p>
-                                    <h4>Pris: </h4>
-                                    <p>DKK 50,-</p>
-                                </div>
-                            </div>
-                            <div class="modal-text">
-                                <div>
-                                    <h2>Event 2: Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2><br/>
-                                    <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
-                                    <p>Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.</p>
-                                    <p>Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004 beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske Øer.</p>
-                                </div>
-                            </div>
-                            <div class="modal-antal">
-                                <div>
-                                    <h3>Antal</h3>
+                        <div class="modal-info">
+                            <div>
+                                <h3>Vigtige Informationer</h3>
+                                <h4>Tid:</h4>
+                                <p>24. november 2018, kl. 09.00 - 20:00</p>
+                                <h4>Sted: </h4>
+                                <p>Den Gamle By,<br/>8000 Århus</p>
+                                <h4>Pris: </h4>
+                                <p>DKK 49,-</p>
+                                <div id="antal">
+                                    <h3 id="antal-titel">Antal</h3>
                                     <form>
                                         <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                        <input type="button" id="event-input-antal-submit" value="Fortsæt">
+                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
                                     </form>
                                 </div>
                             </div>
@@ -142,48 +150,50 @@
         </div>
 
         <!-- ** EVENT NUMMER 3 ** -->
-        <div class="three-col">
-            <div class="event-wrapper" id="event3">
-                <div class="event-img"></div>
-                <div class="event-content">
-                    <h2>Dette er et event</h2>
-                    <p>Dette er et event. Måske det bedste event du nogensinde kommer til at opleve. Hvem ved?</p>
-                    <button id="myBtn_3">Læs mere</button>
+        <div class="three-col" id="event3">
+            <button id="myBtn_3">
+            <div class="card-img">
+                    <div class="col-title-text">
+                            <h3>Musical i Odeon</h3>
+                            <p>Langeskov Borgerforening har købt et antal til billetter til musicalen ”Kærlighed ved første hik” som opføres i Odeon.
+                            </p>
+                            <a href="#" class="event-link">Læs mere</a>
+
+                    </div>
                 </div>
-                <div id="modal3" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close" id="close_3">&times;</span>
-                        <div class="modal-left-col">
-                            <div class="event-img"></div>
+            </button>
+
+            <div id="modal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="close_3">&times;</span>
+                    <div class="modal-left-col">
+                        <div class="event-img" id="modal3-img"></div>
+                    </div>
+                    <div class="modal-right-col">
+                        <div class="modal-text">
+                            <div>
+                                <h2>Event 3: Musical i Odeon</h2><br/>
+                                <p>Genoplev den romantiske kærlighedshistorie om den kejtede 1g’er Viktor og den smukke 3g’er Anja, og oplev, hvordan Viktor går totalt ned med hikke ved klassefesten, da han vil byde den smukke Anja op til dans.</p>
+                                <p>Hvordan Viktor forærer Anja en fugleedderkop i fødselsdagsgave og forvandler hendes fest til et mareridt.</p>
+                                <p>Hvordan en romantisk sejltur på mølleåen alligevel åbner Anjas øjne for den generte og klodsede Viktor.</p>
+                            </div>
                         </div>
-                        <div class="modal-right-col">
-                            <div class="modal-info">
-                                <div>
-                                <h3>Information</h3>
+                        <div class="modal-info">
+                            <div>
+                                <h3>Vigtige Informationer</h3>
                                 <h4>Tid:</h4>
-                                <p>31. oktober 2018, kl. 19.00</p>
+                                <p>15. november 2018</p>
                                 <h4>Sted: </h4>
-                                <p>Daginstitution Mælkevejen, Grønvangen 32, 5550 Langeskov</p>
+                                <p>Odeon<br/> Odeons Kvarter 1, 5000 Odense C</p>
                                 <h4>Pris: </h4>
-                                <p>DKK 50,-</p>
-                                </div>
-                            </div>
-                            <div class="modal-text">
-                                <div>
-                                <h2>Event 3: Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2><br/>
-                                <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
-                                <p>Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.</p>
-                                <p>Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004 beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske Øer.</p>
-                                </div>
-                            </div>
-                            <div class="modal-antal">
-                                <div>
-                                <h3>Antal</h3>
-                                <form>
-                                    <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                    <input type="button" id="event-input-antal-submit" value="Fortsæt">
-                                </form>
+                                <p>DKK 395,-</p>
+                                <div id="antal">
+                                    <h3 id="antal-titel">Antal</h3>
+                                    <form>
+                                        <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -197,9 +207,50 @@
 </main>
 
 <footer class="three-col-container">
-    <div class="three-col">Footer menupunkt 1</div>
-    <div class="three-col">Footer menupunkt 2</div>
-    <div class="three-col">Footer menupunkt 3</div>
+    <div class="three-col">
+        <h2>Adresse:</h2>
+        <p>
+            <br> Langeskov Borgerforening
+            <br> Engvej 16
+            <br> 5550 Langeskov </p>
+    </div>
+
+    <div class="three-col">
+        <h2>Infomation:</h2>
+        <div class="info">
+            <p><br>
+                FAQ om medlemsskab
+                <br> FAQ om borforening
+                <br> Bestyrelse
+                <br> Vedtægter</p>
+        </div>
+
+        <div class="facebooktext">
+            <p>Følg borgerforeningen på Facebook</p>
+        </div>
+        <div class="SoMe">
+            <a href="https://www.facebook.com/Langeskovborgerforening-186504144718815/" target="_blank"><img
+                    src="img/fb_logo.png" alt="Facebook"></a>
+        </div>
+    </div>
+
+    <div class="three-col">
+        <div class="kontaktnavn">
+            <h2>Kontaktformular:</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="">
+                <input name="name" type="text" class="form-control" placeholder="Dit navn" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Din Email" required>
+                <br>
+                <textarea name="message" class="form-control" placeholder="Dit spørgsmål" rows="4"
+                          required></textarea>
+                <br>
+                <input type="submit" class="form-control submit" value="Send">
+            </form>
+        </div>
+    </div>
 </footer>
 
 <script>

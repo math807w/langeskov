@@ -25,6 +25,13 @@
     }
 }
 
+/* Farver */
+/*
+Den grønne farve: #00A572;
+
+*/
+
+
 *{
     padding:0;
     margin:0;
@@ -294,81 +301,94 @@ section{
 /* --- Kolonner --- */
 .three-col-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     grid-column-gap: 5%;
     margin-top:32px;
 }
 .three-col{
-    overflow: hidden;
+	overflow: hidden;
+}
+
+.three-col a{
+	text-decoration:none;
+	color:inherit;
 }
 
 section.three-col-container{
     height:400px;
 }
-section.three-col-container div {
+section.three-col-container .three-col {
+	box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+	border-radius: 8px;
+}
+
+section.three-col-container .three-col:hover {
+	box-shadow: 0px 0px 16px #00A572;
 
 }
+
+#fp-col-1 h2, #fp-col-2 h2, #fp-col-3 h2 {
+	text-align:left;
+	margin-top:1em;
+
+}
+
+section.three-col-container .three-col .card-img{
+	height:100%;
+	box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.5);
+	background-position: top center!important;
+	background-size: cover!important;
+	width:100%;
+	display: grid;
+	grid-template-columns: 100%;
+	align-items: end;
+}
+
+section.three-col-container .three-col .card-img:hover{
+	cursor: pointer;
+}
+
+section.three-col-container .three-col .col-title-text{
+	padding: 5%;
+	border: 1px solid #fff;
+	margin: 5% 5% -4px 5%;
+	color: #fff;
+	background-color: rgba(0, 165, 114,.9);
+	border-radius: 4px;
+	box-shadow: 0 2px rgba(51, 51, 51, .4);
+
+}
+
 
 /* Forside: Events-card */
-
 #fp-col-1 #fp-event-img {
-    height:60%;
 	background-image: url(images/1.jpg);
-	background-size: cover;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 8px;
 }
-#fp-col-1 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-    padding:10%;
-	border-radius: 6px;
+#fp-col-1{
 }
-#fp-col-1:hover {
-    box-shadow: 0px 0px 16px #00A572;
-    padding:10%;
-    border-radius: 6px;
+#fp-col-1:hover .col-title-text p{
+	height:120px;
 }
-#fp-col-1 div {
 
-}
 #fp-col-2 #fp-kraemmer-img {
-    height:60%;
 	background-image: url(images/2.jpg);
-	background-size: cover;
-	box-shadow: 0px 0px 10px grey;
-	border-radius: 8px;
-
 }
 #fp-col-2 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-	padding: 10%;
-	border-radius: 8px;
-    opacity: 80%;
 }
-#fp-col-2:hover {
-    box-shadow: 0px 0px 16px rgba(51, 51, 51, 0.6);
-    padding:10%;
-    border-radius: 6px;
+#fp-col-2:hover .col-title-text p{
+	height:120px;
 }
 
 #fp-col-3 #fp-kontakt-img {
-    height:60%;
 	background-image: url(images/3.jpg);
-	background-size: cover;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 8px;
 }
 #fp-col-3 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-	padding: 10%;
-	border-radius: 8px;
 }
-#fp-col-3:hover {
-    box-shadow: 0px 0px 16px rgba(51, 51, 51, 0.6);
-    padding:10%;
-    border-radius: 6px;
+#fp-col-3:hover .col-title-text p{
+	height:120px;
 }
+
 .three-col-container .col-title-text{
     padding-top:1em;
     text-align: left;
@@ -517,7 +537,7 @@ footer.three-col-container p{
 	outline: none;
 	border-bottom: 1px solid gray;
 	color: #000000;
-	font-size: 1,2em;
+	font-size: 1.2em;
 	margin-bottom: 12px;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	border-radius: 8px;
@@ -537,9 +557,6 @@ form .submit {
 	height: 2em;
 	border-radius: 8px;
 	width: 4em;
-	
-
-	 
 }
 form .submit:hover{
 	background-color: #FD6F26;
@@ -550,45 +567,74 @@ form .submit:hover{
 
 /* --- EVENTS SIDE --- */
 /* Events layout */
-.event-wrapper{
-    height:100%;
-    max-height:400px;
-    border:1px solid black;
 
-}
-
-.event-wrapper .event-img{
-    width:100%;
-    height:50%;
-    background-size:cover;
-}
-
-#event1 .event-img {
-	background: url("img/kvindehjemmet.jpg") no-repeat top center;
-	background-size: cover;
+#event1 .card-img {
+	background: url("img/kvindehjemmet.jpg") no-repeat;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
-		
+
 }
 
-#event2 .event-img{
-	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat top center;
-	background-size: cover;
+#event2 .card-img{
+	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
-#event3 .event-img{
-	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat top center;
-	background-size: cover;
+#event3 .card-img{
+	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
 
-.event-content{
-    padding:10px 20px;
+#event1:hover .col-title-text p{
+	height:120px;
 }
-.event-content button{
-    padding:15px 0;
-    width:100%;
-    font-size:1em;
+#event2:hover .col-title-text p{
+	height:120px;
+}
+#event3:hover .col-title-text p{
+	height:120px;
+}
+.col-title-text p:after{
+
+}
+
+.col-title-text p{
+	margin-top:.5em;
+	height:0px;
+	overflow:hidden;
+	transition: height .4s;
+}
+
+.three-col button{
+	height:400px;
+	font-size:1em;
+
+}
+
+.col-title-text button{
+	font-size:1em;
+	width:100%;
+	text-align: center;
+	margin-top:1em;
+	background-color: transparent;
+	border:none;
+	color:#fff;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+a.event-link{
+	display: block;
+	text-align: center;
+	margin:.5em auto 0 auto;
+	padding:1em 30px;
+	border:1px solid #fff;
+	text-decoration: none;
+	background-color:darkorange;
+	border-radius:8px;
+	color:#fff;
+	width:80px;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	font-size:1em;
+
 }
 
 .kommendeevents{
@@ -599,7 +645,7 @@ form .submit:hover{
     height:100px;
 	font-size: 3em;
 	font-family: "Montserrat", "Helvetica Neue", sans-serif; 
-	
+	margin-top:32px;
 }
 
 /* ---- MODAL ---- */
@@ -624,7 +670,9 @@ form .submit:hover{
     padding: 0;
     border: 1px solid #888;
     width: 80%;
+	max-width:1100px;
     height:calc(100% - 100px);
+	max-height:700px;
     box-shadow: 0px 0px 20px #000;
 
 }
@@ -644,9 +692,18 @@ form .submit:hover{
 .modal-content .event-img{
     width:100%;
     height:100%;
-    background: url("img/kvindehjemmet.jpg") no-repeat center;
-    background-size: cover;
+    background-size: cover!important;
     float:left;
+}
+
+.modal-content #modal1-img{
+	background: url("img/kvindehjemmet.jpg") no-repeat center;
+}
+.modal-content #modal2-img{
+	background: url("img/juleshopping-i-vestergade-i-aarhus.jpg") no-repeat center;
+}
+.modal-content #modal3-img{
+	background: url("img/kærlighed-ved-første-hik.jpg") no-repeat center;
 }
 
 .modal-content .modal-text{
@@ -655,11 +712,14 @@ form .submit:hover{
     height:50%;
     overflow:hidden;
     float:left;
+	display: flex;
+	align-items: center;
 }
 
 .modal-content .modal-text div{
+
     padding:2.5em;
-    height:calc(100% - 5em);
+
 
 }
 
@@ -690,7 +750,7 @@ form .submit:hover{
 
 }
 .modal-content .modal-info p{
-
+	margin-top:0px;
 }
 
 h3#antal-titel {
@@ -742,7 +802,7 @@ h3#antal-titel {
     color: #aaaaaa;
     position: absolute;
     top:-3px;
-    right:calc(10% - 10px);
+    right:calc(10% - 6px);
     font-size: 28px;
     font-weight: bold;
     margin-right:10px;
