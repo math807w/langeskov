@@ -596,6 +596,9 @@ form .submit:hover{
 .col-title-text p:after{
 
 }
+.card-img .col-title-text strong:hover {
+	text-decoration: underline;
+}
 
 .col-title-text p{
 	margin-top:.5em;
