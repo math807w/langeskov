@@ -90,7 +90,22 @@ header{
     height:42px;
 }
 
+button#kurvBtn{
+	border:none;
+	background-color: transparent;
+	font-size:inherit;
+}
 
+#varer-i-kurv-container{
+	position: absolute;
+	background: #00A572;
+	border-radius:50px;
+	padding:4px 7.5px;
+	color:#fff;
+	margin-left:18px;
+	margin-top:-20px;
+	font-size:.9em;
+}
 
 nav{
     display: grid;
@@ -838,14 +853,14 @@ h3#antal-titel {
     cursor: pointer;
 }
 
-#event-input-antal{
+.event-input-antal{
     width:60px;
     text-align: center;
     padding:4px 0;
     font-size: 1.4em;
 }
 
-button#event-input-antal-submit {
+button.event-input-antal-submit {
 	margin-top:-4px!important;
 	margin-left: 12px;
 	padding:13px 0 10px 0;
@@ -938,10 +953,85 @@ z-index: 9999;
 
 /*---peekaboo slut---*/
 
-/*--nav dropdown start---*/
+
+/*-- Indkøbskurv Modal Start---*/
 
 
-/*--nav dropdown slut---*/
+#kurvmodal .modal-content{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#kurvmodal .modal-content #kurv-content{
+	width:80%;
+	height:80%;
+
+}
+
+#tom-kurv-besked {
+	margin-top:32px;
+}
+
+#vare-liste{
+	margin-top:64px;
+
+}
+
+.vare{
+	display: grid;
+	height:120px;
+	align-items: center;
+	grid-template-columns: 2fr 1fr 1fr;
+	padding: 1em;
+	grid-column-gap: 2em;
+	border-radius:6px;
+	box-shadow: 0px 0px 6px #333;
+}
+.vare div{
+	display:flex;
+}
+
+#vare-delete{
+	border:0;
+	height:40px;
+	width:40px;
+	align-self:center;
+	margin-left:25%;
+}
+
+.vare form p{
+	margin-top:0;
+}
+
+.vare form, .vare form p{
+	text-align: center;
+	justify-self: center;
+}
+
+
+.vare input{
+	margin-top:.5em;
+
+}
+
+.vare img{
+	float:left;
+}
+
+.vare span{
+	float:left;
+	margin-left:1em;
+}
+
+button#betaling-btn{
+	position:absolute;
+	bottom:25%;
+	right:20%;
+}
+
+
+/*-- Indkøbskurv Modal Slut---*/
 
 
 
