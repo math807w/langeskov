@@ -61,9 +61,6 @@ p{
 /* FORSIDE */
 header{
     padding:0 2%;
-    box-shadow: 0 2px 6px 0 grey, 0 4px 15px 0 lightgrey;
-    z-index: 9999px;
-
 }
 #top-logo{
     align-self: center;
@@ -121,7 +118,7 @@ nav ul a{
 nav a#bliv-medlem {
     background-color: darkorange;
     color:#FFF;
-    box-shadow: 0px 6px 12px 0px grey;
+    box-shadow: 0px 8px 16px 0px grey;
     border-radius: 8px;
 }
 nav #login-knap {
@@ -142,39 +139,9 @@ nav ul a:hover {
     border-radius: 8px;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-    clear: both;
-  width: 100%;
-}
-
 main{
 padding:0  10%;
-padding-bottom: 10px;
 }
-
-ul li ul {
-    background: orange;
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-}
-
-section{
-    margin-top:32px;
-}
-
 /* ------------imageslider--------- */
 .slider{
     width:100%;
@@ -182,11 +149,10 @@ section{
     align-items: center;
     justify-content: center;
     height:300px;
-    padding-top: 20px;
-    
 }
 
 .main-banner {
+		margin: 0 auto;
 		max-width: 100%;
 		width: 100%;
 		height: 100%;
@@ -313,62 +279,47 @@ section.three-col-container div {
 /* Forside: Events-card */
 
 #fp-col-1 #fp-event-img {
+    background-color: coral;
     height:60%;
 	background-image: url(images/1.jpg);
 	background-size: cover;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 8px;
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+	border-radius: 8px;
+	
 }
 #fp-col-1 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-    padding:10%;
-	border-radius: 6px;
-}
-#fp-col-1:hover {
-    box-shadow: 0px 0px 16px #00A572;
-    padding:10%;
-    border-radius: 6px;
-}
-#fp-col-1 div {
-
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+	padding: 8px;
+	border-radius: 8px;
 }
 #fp-col-2 #fp-kraemmer-img {
+    background-color: coral;
     height:60%;
 	background-image: url(images/2.jpg);
 	background-size: cover;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	border-radius: 8px;
-
 }
 #fp-col-2 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-	padding: 10%;
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+	padding: 8px;
 	border-radius: 8px;
-    opacity: 80%;
-}
-#fp-col-2:hover {
-    box-shadow: 0px 0px 16px rgba(51, 51, 51, 0.6);
-    padding:10%;
-    border-radius: 6px;
 }
 
 #fp-col-3 #fp-kontakt-img {
+    background-color: coral;
     height:60%;
 	background-image: url(images/3.jpg);
 	background-size: cover;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 8px;
-}
-#fp-col-3 {
-    box-shadow: 0px 0px 14px rgba(51, 51, 51, 0.5);
-	padding: 10%;
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
 	border-radius: 8px;
 }
-#fp-col-3:hover {
-    box-shadow: 0px 0px 16px rgba(51, 51, 51, 0.6);
-    padding:10%;
-    border-radius: 6px;
+#fp-col-3 {
+	box-shadow: 0 6px 10px 0 grey, 0 8px 22px 0 grey;
+	padding: 8px;
+	border-radius: 8px;
 }
+
 .three-col-container .col-title-text{
     padding-top:1em;
     text-align: left;
@@ -382,12 +333,9 @@ section.three-col-container div {
 /*------sponsorer slideshow--------*/
 #sponsorer {
 	overflow: hidden;
-	height: 205px;
+	height: 410px;
 	width: 728px;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 .slide-wrapper {
 	width: 8008px;
@@ -395,7 +343,7 @@ section.three-col-container div {
 }
 .slide {
 	float: left;
-	height: 205px;
+	height: 410px;
 	width: 728px;
 	background-size: contain;
 	background-position: center;
@@ -415,7 +363,7 @@ section.three-col-container div {
 	background-image: url("img/sponsorer/superbrugsen.jpg")
 }
 .slide:nth-child(5){
-	background-image: url( "img/sponsorer/xlbyg.jpg")
+	background-image: url("img/sponsorer/sponsorer/xlbyg.jpg")
 }
 .slide:nth-child(6){
 	background-image: url("img/sponsorer/schmidtsradio.png")
@@ -494,11 +442,11 @@ footer.three-col-container p{
 
 .SoMe img{
 	width: 50px;
-	margin-top: -25px;
+	margin-top: -2px;
 }
 
 .facebooktext{
-	margin-top: 43px;
+	margin-top: 20px;
 	
 }
 
@@ -602,7 +550,7 @@ form .submit:hover{
 	
 }
 
-/* ---- MODAL ---- */
+/* Modal */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -625,26 +573,24 @@ form .submit:hover{
     border: 1px solid #888;
     width: 80%;
     height:calc(100% - 100px);
-    box-shadow: 0px 0px 20px #000;
-
 }
 
 .modal-content .modal-left-col{
     float:left;
     height:100%;
-    width:45%;
+    width:50%;
 }
 
 .modal-content .modal-right-col{
     float: left;
     height:100%;
-    width:55%;
+    width:50%;
 }
 
 .modal-content .event-img{
     width:100%;
     height:100%;
-    background: url("img/kvindehjemmet.jpg") no-repeat center;
+    background: url("img/kvindehjemmet.jpg") no-repeat top center;
     background-size: cover;
     float:left;
 }
@@ -652,63 +598,35 @@ form .submit:hover{
 .modal-content .modal-text{
     width:100%;
     background: #fff;
-    height:50%;
+    height:45%;
     overflow:hidden;
     float:left;
 }
 
 .modal-content .modal-text div{
-    padding:2.5em;
-    height:calc(100% - 5em);
-
+    padding:2em;
 }
 
-.modal-content .modal-info {
+.modal-content .modal-info{
     width:100%;
-    height:50%;
-    display: flex;
-    /*background-color:#4267b2;*/
+    overflow: auto;
+    height:35%;
+    background-color:#4267b2;
     color:#fff;
-    overflow:hidden;
-
-}
-.modal-content .modal-info #antal{
-    display:flex;
-    align-content:start;
-    justify-content: flex-end;
-    padding:1.25em 2.5em 1.25em 2.5em;
-    background:#fff;
-    width:calc(100%);
-    margin:1.25em auto  0 -2.5em;
-    height:15%;
 }
 
 .modal-content .modal-info div {
-    padding:1.25em 2.5em;
-    background-color: #00A572;
-    width:100%;
-
-}
-.modal-content .modal-info p{
-
+    padding:2em;
 }
 
-h3#antal-titel {
-    align-self: center;
-    color:#000;
-    margin-right:1em;
-}
-/*
 .modal-content .modal-antal {
-    background-color: #00A572;
     width:100%;
-    overflow: visible;
-    height:100%;
+    overflow: hidden;
+    height:20%;
 }
-*/
 
 .modal-content .modal-antal div{
-    padding:3em;
+    padding:2em;
 }
 
 .modal-content h2, h3, h4{
@@ -716,9 +634,8 @@ h3#antal-titel {
 }
 
 .modal-content h2{
-    font-size:1.4em;
-    line-height: 1.1em;
-    margin-bottom:-10px;
+    font-size:1.6em;
+    line-height: 1.1;
 }
 
 .modal-content h3{
@@ -731,10 +648,8 @@ h3#antal-titel {
     text-decoration: underline;
 }
 
-.modal-content p {
+.modal-content .modal-info p {
     font-size:1em;
-    line-height:1.3em;
-    margin-top:10px;
 }
 
 /* Luk-knappen */
@@ -761,23 +676,12 @@ h3#antal-titel {
 
 #event-input-antal{
     width:60px;
-    height: 14px;
     text-align: center;
     padding:12px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
-button#event-input-antal-submit  {
-    margin-left:12px;
-    height:42px;
-    width:126px;
-    background-color: darkorange;
-    color:#fff;
-    border:none;
-    font-size:1em;
-    font-family: inherit;
-    box-shadow: 1px 1px 1px #000;
-    border-radius:10px;
+#event-input-antal-submit  {
 
 }
 
@@ -841,14 +745,14 @@ button#event-input-antal-submit  {
   -o-transform:rotate(90deg); /* Opera */
   margin-top: 300px;
   right: 0;
-  z-index: 9999;
+	  z-index: 9999;
 }
 
 #sectiontohide {
   background:white;
-  width:400px;
-  height: 500px;
-  overflow: scroll;
+	width:400px;
+	height: 500px;
+	overflow: scroll;
   right: 0;
   margin-top: 250px;
   border-radius: 8px;
@@ -861,7 +765,6 @@ z-index: 9999;
 /*---peekaboo slut---*/
 
 /*--nav dropdown start---*/
-
 
 
 /*--nav dropdown slut---*/
