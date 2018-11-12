@@ -69,7 +69,7 @@ p{
 header{
     padding:0 2%;
     box-shadow: 0 2px 6px 0 grey;
-    z-index: 9999px;
+    z-index: 9999;
 }
 #top-logo{
     align-self: center;
@@ -90,7 +90,23 @@ header{
     height:42px;
 }
 
+button#kurvBtn{
+	border:none;
+	background-color: transparent;
+	font-size:inherit;
+}
 
+#varer-i-kurv-container{
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	position: absolute;
+	background: #00A572;
+	border-radius:100%;
+	padding:4px 7.5px;
+	color:#fff;
+	margin-left:18px;
+	margin-top:-20px;
+	font-size:.9em;
+}
 
 nav{
     display: grid;
@@ -679,7 +695,7 @@ a.event-link{
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -693,7 +709,7 @@ a.event-link{
 	height:calc(100% - 100px);
 	max-height:700px;
 	box-shadow: 0px 0px 20px #000;
-
+	border-radius:10px;
 }
 
 .modal-content .modal-left-col{
@@ -713,6 +729,7 @@ a.event-link{
 	height:100%;
 	background-size: cover!important;
 	float:left;
+	border-radius:10px 0 0 10px;
 }
 
 .modal-content #modal1-img{
@@ -733,6 +750,7 @@ a.event-link{
 	float:left;
 	display: flex;
 	align-items: center;
+	border-radius: 0 10px 10px 0;
 }
 
 .modal-content .modal-text div{
@@ -749,7 +767,7 @@ a.event-link{
 	/*background-color:#4267b2;*/
 	color:#fff;
 	overflow:hidden;
-
+	border-radius: 0 0 10px 0;
 }
 .modal-content .modal-info #antal{
 	display:flex;
@@ -818,34 +836,32 @@ h3#antal-titel {
 
 /* Luk-knappen */
 .close {
-    color: #aaaaaa;
+    color: #aaa;
     position: absolute;
 	top:0;
-    right:calc(0px + 10%);
-    font-size: 28px;
+    right:0;
+    font-size: 60px;
     font-weight: bold;
-    margin-right:10px;
-    padding:0 9px;
-    background: #fff;
-    margin-top:54px;
+    padding:16px 34px;
     display: inline;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .close:hover,
 .close:focus {
-    color: #111;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 
-#event-input-antal{
+.event-input-antal{
     width:60px;
     text-align: center;
     padding:4px 0;
     font-size: 1.4em;
 }
 
-button#event-input-antal-submit {
+button.event-input-antal-submit {
 	margin-top:-4px!important;
 	margin-left: 12px;
 	padding:13px 0 10px 0;
@@ -938,10 +954,85 @@ z-index: 9999;
 
 /*---peekaboo slut---*/
 
-/*--nav dropdown start---*/
+
+/*-- Indkøbskurv Modal Start---*/
 
 
-/*--nav dropdown slut---*/
+#kurvmodal .modal-content{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+#kurvmodal .modal-content #kurv-content{
+	width:80%;
+	height:80%;
+
+}
+
+#tom-kurv-besked {
+	margin-top:32px;
+}
+
+#vare-liste{
+	margin-top:64px;
+
+}
+
+.vare{
+	display: grid;
+	height:120px;
+	align-items: center;
+	grid-template-columns: 2fr 1fr 1fr;
+	padding: 1em;
+	grid-column-gap: 2em;
+	border-radius:6px;
+	box-shadow: 0px 0px 6px #333;
+}
+.vare div{
+	display:flex;
+}
+
+#vare-delete{
+	border:0;
+	height:40px;
+	width:40px;
+	align-self:center;
+	margin-left:25%;
+}
+
+.vare form p{
+	margin-top:0;
+}
+
+.vare form, .vare form p{
+	text-align: center;
+	justify-self: center;
+}
+
+
+.vare input{
+	margin-top:.5em;
+
+}
+
+.vare img{
+	float:left;
+}
+
+.vare span{
+	float:left;
+	margin-left:1em;
+}
+
+button#betaling-btn{
+	position:absolute;
+	bottom:25%;
+	right:20%;
+}
+
+
+/*-- Indkøbskurv Modal Slut---*/
 
 
 

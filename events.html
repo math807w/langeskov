@@ -28,10 +28,19 @@
             <a href="kraemmer.html"><li>Kræmmermarked</li></a>
             <a href="#"><li>Om os</li></a>
             <a href="#"><li>Kontakt</li></a>
-            <a class="" id="kurv" href="#"><li><img src="images/kurv.png"></li></a>
+            <button id="kurvBtn"><a class="" id="kurv" href="#"><li><div id="varer-i-kurv-container"><p id="varer-i-kurv">0</p></div><img src="images/kurv.png"></li></a></button>
         </ul>
         <ul id="login-menu">
-            <a class="" id="login-knap" href="#"><li>Login</li></a>
+            <div class="dropdown">
+                <button class="dropbtn">Login
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><li>Medlem</li></a>
+                    <a href="#"><li>bestyrelse</li></a>
+                    <a href="#"><li>vagt login</li></a>
+                </div>
+            </div>
             <a class="" id="bliv-medlem" href="#"><li>Bliv medlem</li></a>
         </ul>
     </nav>
@@ -67,7 +76,7 @@
                         <div class="modal-right-col">
                             <div class="modal-text">
                                 <div>
-                                    <h2>Event 1: Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2><br/>
+                                    <h2>Foredrag med Carsten Egø Nielsen:<br/>Pigerne på Sprogø</h2><br/>
                                     <p>Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd... De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.</p>
                                     <p>Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.</p>
                                 </div>
@@ -84,8 +93,8 @@
                                     <div id="antal">
                                     <h3 id="antal-titel">Antal</h3>
                                     <form>
-                                        <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
+                                        <input type="number" id="event1-input-antal" class="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                                        <button type="button" id="event1-input-antal-submit" class="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
                                     </form>
                                     </div>
                                 </div>
@@ -119,7 +128,7 @@
                     <div class="modal-right-col">
                         <div class="modal-text">
                             <div>
-                                <h2>Event 2: Juletur til Århus</h2><br/>
+                                <h2>Juletur til Århus</h2><br/>
                                 <p>Årets juletur går til »Den Gamle By« i Århus. Tag med og oplev julestemningen som
                                 den var på mormor og morfars tid. </p>
                                 <p>Har man ikke lyst til at tage i »Den Gamle By« er
@@ -139,8 +148,8 @@
                                 <div id="antal">
                                     <h3 id="antal-titel">Antal</h3>
                                     <form>
-                                        <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
+                                        <input type="number" id="event2-input-antal" class="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                                        <button type="button" id="event2-input-antal-submit" class="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
                                     </form>
                                 </div>
                             </div>
@@ -174,7 +183,7 @@
                     <div class="modal-right-col">
                         <div class="modal-text">
                             <div>
-                                <h2>Event 3: Musical i Odeon</h2><br/>
+                                <h2>Musical i Odeon</h2><br/>
                                 <p>Genoplev den romantiske kærlighedshistorie om den kejtede 1g’er Viktor og den smukke 3g’er Anja, og oplev, hvordan Viktor går totalt ned med hikke ved klassefesten, da han vil byde den smukke Anja op til dans.</p>
                                 <p>Hvordan Viktor forærer Anja en fugleedderkop i fødselsdagsgave og forvandler hendes fest til et mareridt.</p>
                                 <p>Hvordan en romantisk sejltur på mølleåen alligevel åbner Anjas øjne for den generte og klodsede Viktor.</p>
@@ -192,8 +201,8 @@
                                 <div id="antal">
                                     <h3 id="antal-titel">Antal</h3>
                                     <form>
-                                        <input type="number" id="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
-                                        <button type="button" id="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
+                                        <input type="number" id="event3-input-antal" class="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                                        <button type="button" id="event3-input-antal-submit" class="event-input-antal-submit" value="Fortsæt">Læg i kurv</button>
                                     </form>
                                 </div>
                             </div>
@@ -254,26 +263,82 @@
     </div>
 </footer>
 
+<!-- Indkøbskurv -->
+<div id="kurvmodal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div id="kurv-content">
+            <h2>Indkøbskurv</h2>
+            <p id="tom-kurv-besked"></p>
+            <span class="close" id="close_kurv">&times;</span>
+            <div id="vare-liste">
+                <div class="vare">
+                    <div>
+                    <img height="100px" src="img/kvindehjemmet.jpg" />
+                        <span>Foredrag med Carsten Egø:<br/>Pigerne på Sprogø<br/><br/><br/>D.23/10 kl. 19:00</span>
+                    </div>
+                    <div><button id="vare-delete">X</button></div>
+                    <div>
+                    <form>
+                        <p>Antal personer</p>
+                        <input type="number" id="kurv-vare-antal" class="event-input-antal" value="1" pattern="[0-9]*" min="1" max="99">
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Gå til betaling</button>
+        </div>
+    </div>
+</div>
+
+
 <script>
 
 
         // Get the modal
+        var kurvModal = document.getElementById('kurvmodal');
+        var kurvVareAntal = document.getElementById('kurv-vare-antal');
+
         var modal_1 = document.getElementById('modal1');
         var modal_2 = document.getElementById('modal2');
         var modal_3 = document.getElementById('modal3');
 
         // Get the button that opens the modal
+        var kurvBtn = document.getElementById('kurvBtn');
         var btn_1 = document.getElementById("myBtn_1");
         var btn_2 = document.getElementById("myBtn_2");
         var btn_3 = document.getElementById("myBtn_3");
 
         // Get the <span> element that closes the modal
+        var kurvSpan = document.getElementById("close_kurv");
         var span_1 = document.getElementById("close_1");
         var span_2 = document.getElementById("close_2");
         var span_3 = document.getElementById("close_3");
 
 
+        function refreshKurvAntal() {
+            kurvVareAntal.value = mineVarer;
+            if(kurvVareAntal.value < 1){
+                document.getElementsByClassName('vare')[0].style.display = "none";
+                document.getElementById("tom-kurv-besked").innerText = "Der er ingen varer i din kurv.";
+            }else{
+                document.getElementsByClassName('vare')[0].style.display = "grid";
+                document.getElementById("tom-kurv-besked").innerText = "";
+            }
+        }
+
+        var deleteBtn = document.getElementsByClassName('vare')[0];
+
+        deleteBtn.onclick = function(){
+            mineVarer = 0;
+        }
+
         // When the user clicks the button, open the modal
+        kurvBtn.onclick = function () {
+            kurvModal.style.display = "block";
+            refreshKurvAntal();
+        }
+
         btn_1.onclick = function () {
             modal_1.style.display = "block";
         }
@@ -284,7 +349,12 @@
             modal_3.style.display = "block";
         }
 
+
         // When the user clicks on <span> (x), close the modal
+        kurvSpan.onclick = function () {
+            kurvModal.style.display = "none";
+        }
+
         span_1.onclick = function () {
             modal_1.style.display = "none";
         }
@@ -295,20 +365,68 @@
             modal_3.style.display = "none";
         }
 
+
         // When the user clicks anywhere outside of the modal, close it
+
         window.onclick = function(event) {
             if (event.target == modal_1) {
                 modal_1.style.display = "none";
+                eventBestilBtn1.style.backgroundColor = "darkorange";
+                eventBestilBtn1.innerText = "Læg i kurv";
             }
             else if(event.target == modal_2){
                 modal_2.style.display = "none";
+                eventBestilBtn2.style.backgroundColor = "darkorange";
+                eventBestilBtn2.innerText = "Læg i kurv";
             }
             else if(event.target == modal_3){
                 modal_3.style.display = "none";
+                eventBestilBtn3.style.backgroundColor = "darkorange";
+                eventBestilBtn3.innerText = "Læg i kurv";
+            }
+            else if (event.target == kurvModal) {
+                kurvModal.style.display = "none";
             }
         }
 
 
+
+
+        var eventBestilBtn1 = document.getElementById('event1-input-antal-submit');
+        var eventBestilBtn2 = document.getElementById('event2-input-antal-submit');
+        var eventBestilBtn3 = document.getElementById('event3-input-antal-submit');
+
+        var antalBilletter1 = document.getElementById('event1-input-antal');
+        var antalBilletter2 = document.getElementById('event2-input-antal');
+        var antalBilletter3 = document.getElementById('event3-input-antal');
+
+        var antalVarerKurv = document.getElementById('varer-i-kurv');
+        var mineVarer = 0;
+
+        function putVarerIKurv() {
+            antalVarerKurv.innerText = parseInt(mineVarer);
+        }
+
+        eventBestilBtn1.onclick = function(){
+            mineVarer += parseInt(antalBilletter1.value);
+            eventBestilBtn1.style.backgroundColor = "green";
+            eventBestilBtn1.innerText = "Lagt i kurv! ✓";
+            putVarerIKurv();
+        }
+
+        eventBestilBtn2.onclick = function(){
+            mineVarer += parseInt(antalBilletter2.value);
+            eventBestilBtn2.style.backgroundColor = "green";
+            eventBestilBtn2.innerText = "Lagt i kurv! ✓";
+            putVarerIKurv();
+        }
+
+        eventBestilBtn3.onclick = function(){
+            mineVarer += parseInt(antalBilletter3.value);
+            eventBestilBtn3.style.backgroundColor = "green";
+            eventBestilBtn3.innerText = "Lagt i kurv! ✓";
+            putVarerIKurv();
+        }
 
 
         /*
