@@ -204,6 +204,7 @@ padding:0  10%;
     align-items: center;
     justify-content: center;
     height:300px;
+	margin-top:32px;
 }
 
 .main-banner {
@@ -525,12 +526,11 @@ footer.three-col-container p{
 
 .SoMe img{
 	width: 50px;
-	margin-top: -2px;
+	margin-top: -25px;
 }
 
 .facebooktext{
-	margin-top: 20px;
-
+	margin-top: 43px;
 }
 
 .kontaktnavn{
@@ -942,6 +942,9 @@ z-index: 9999;
 
 
 /*--nav dropdown slut---*/
+
+
+
 
 
 
