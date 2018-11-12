@@ -81,13 +81,13 @@ header{
 }
 
 #kurv img {
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
     float: right;
 }
 #kurv{
     align-self:auto;
-    height:58px;
+    height:42px;
 }
 
 nav{
@@ -127,7 +127,7 @@ nav ul a{
 nav a#bliv-medlem {
     background-color: darkorange;
     color:#FFF;
-    box-shadow: 0px 8px 16px 0px grey;
+    box-shadow: 0px 4px 12px 0px grey;
     border-radius: 8px;
 }
 /*--------styling af login knap-------*/
@@ -417,9 +417,9 @@ background-image: url(images/1.jpg);
 /*------sponsorer slideshow--------*/
 #sponsorer {
 	overflow: hidden;
-	height: 410px;
+	height: 205px;
 	width: 728px;
-	margin: 0 auto;
+	margin: 32px auto;
 }
 .slide-wrapper {
 	width: 8008px;
