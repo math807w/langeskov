@@ -69,7 +69,7 @@ p{
 header{
     padding:0 2%;
     box-shadow: 0 2px 6px 0 grey;
-    z-index: 9999px;
+    z-index: 9999;
 }
 #top-logo{
     align-self: center;
@@ -97,9 +97,10 @@ button#kurvBtn{
 }
 
 #varer-i-kurv-container{
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	position: absolute;
 	background: #00A572;
-	border-radius:50px;
+	border-radius:100%;
 	padding:4px 7.5px;
 	color:#fff;
 	margin-left:18px;
@@ -694,7 +695,7 @@ a.event-link{
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -708,7 +709,7 @@ a.event-link{
 	height:calc(100% - 100px);
 	max-height:700px;
 	box-shadow: 0px 0px 20px #000;
-
+	border-radius:10px;
 }
 
 .modal-content .modal-left-col{
@@ -728,6 +729,7 @@ a.event-link{
 	height:100%;
 	background-size: cover!important;
 	float:left;
+	border-radius:10px 0 0 10px;
 }
 
 .modal-content #modal1-img{
@@ -748,6 +750,7 @@ a.event-link{
 	float:left;
 	display: flex;
 	align-items: center;
+	border-radius: 0 10px 10px 0;
 }
 
 .modal-content .modal-text div{
@@ -764,7 +767,7 @@ a.event-link{
 	/*background-color:#4267b2;*/
 	color:#fff;
 	overflow:hidden;
-
+	border-radius: 0 0 10px 0;
 }
 .modal-content .modal-info #antal{
 	display:flex;
@@ -833,22 +836,20 @@ h3#antal-titel {
 
 /* Luk-knappen */
 .close {
-    color: #aaaaaa;
+    color: #aaa;
     position: absolute;
 	top:0;
-    right:calc(0px + 10%);
-    font-size: 28px;
+    right:0;
+    font-size: 60px;
     font-weight: bold;
-    margin-right:10px;
-    padding:0 9px;
-    background: #fff;
-    margin-top:54px;
+    padding:16px 34px;
     display: inline;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .close:hover,
 .close:focus {
-    color: #111;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
