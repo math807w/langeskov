@@ -97,7 +97,7 @@ nav{
     width:100%;
     overflow:hidden;
     font-size:.95em;
-    
+
 }
 nav ul{
     display:grid;
@@ -137,7 +137,7 @@ nav a#bliv-medlem {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: black;
@@ -494,7 +494,7 @@ background-image: url(images/1.jpg);
 
 footer {
     padding:0 10%;
-    background: #00A572;  
+    background: #00A572;
 }
 
 footer div{
@@ -505,7 +505,7 @@ footer div{
 footer.three-col-container{
 	color: white;
 	text-align: left;
-	
+
 }
 
 footer.three-col-container h2{
@@ -520,7 +520,7 @@ footer.three-col-container p{
 .info{
 	line-height: 1.4;
 	margin: 0px;
-	
+
 }
 
 .SoMe img{
@@ -530,7 +530,7 @@ footer.three-col-container p{
 
 .facebooktext{
 	margin-top: 20px;
-	
+
 }
 
 .kontaktnavn{
@@ -658,7 +658,7 @@ a.event-link{
     justify-content: center;
     height:100px;
 	font-size: 3em;
-	font-family: "Montserrat", "Helvetica Neue", sans-serif; 
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	margin-top:32px;
 }
 
@@ -677,36 +677,52 @@ a.event-link{
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+/* ---- MODAL ---- */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 50px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
 	max-width:1100px;
-    height:calc(100% - 100px);
+	height:calc(100% - 100px);
 	max-height:700px;
-    box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+
 }
 
 .modal-content .modal-left-col{
-    float:left;
-    height:100%;
-    width:50%;
+	float:left;
+	height:100%;
+	width:45%;
 }
 
 .modal-content .modal-right-col{
-    float: left;
-    height:100%;
-    width:50%;
+	float: left;
+	height:100%;
+	width:55%;
 }
 
 .modal-content .event-img{
-    width:100%;
-    height:100%;
-    background-size: cover!important;
-    float:left;
+	width:100%;
+	height:100%;
+	background-size: cover!important;
+	float:left;
 }
 
 .modal-content #modal1-img{
@@ -720,68 +736,94 @@ a.event-link{
 }
 
 .modal-content .modal-text{
-    width:100%;
-    background: #fff;
-    height:45%;
-    overflow:hidden;
-    float:left;
+	width:100%;
+	background: #fff;
+	height:50%;
+	overflow:hidden;
+	float:left;
 	display: flex;
 	align-items: center;
 }
 
 .modal-content .modal-text div{
-    padding:2.5em;
+
+	padding:2.5em;
+
+
 }
 
-.modal-content .modal-info{
-    width:100%;
-    overflow: auto;
-    height:35%;
-    background-color:#4267b2;
-    color:#fff;
+.modal-content .modal-info {
+	width:100%;
+	height:50%;
+	display: flex;
+	/*background-color:#4267b2;*/
+	color:#fff;
+	overflow:hidden;
+
+}
+.modal-content .modal-info #antal{
+	display:flex;
+	align-content:start;
+	justify-content: flex-end;
+	padding:1.25em 2.5em 1.25em 2.5em;
+	background:#fff;
+	width:calc(100%);
+	margin:1.25em auto  0 -2.5em;
+	height:15%;
 }
 
 .modal-content .modal-info div {
-    padding:1.25em 2.5em;
-    background-color: #00A572;
-    width:100%;
+	padding:1.25em 2.5em;
+	background-color: #00A572;
+	width:100%;
 
 }
 .modal-content .modal-info p{
 	margin-top:0px;
 }
 
-.modal-content .modal-antal {
-    width:100%;
-    overflow: hidden;
-    height:20%;
+h3#antal-titel {
+	align-self: center;
+	color:#000;
+	margin-right:1em;
 }
+/*
+.modal-content .modal-antal {
+    background-color: #00A572;
+    width:100%;
+    overflow: visible;
+    height:100%;
+}
+*/
 
 .modal-content .modal-antal div{
-    padding:2em;
+	padding:3em;
 }
 
 .modal-content h2, h3, h4{
-    text-align:left;
+	text-align:left;
 }
 
 .modal-content h2{
-    font-size:1.6em;
-    line-height: 1.1;
+	font-size:1.4em;
+	line-height: 1.1em;
+	margin-bottom:-10px;
 }
 
 .modal-content h3{
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .modal-content h4{
-    margin:12px 0 2px 0;
-    line-height: 1;
-    text-decoration: underline;
+	margin:12px 0 2px 0;
+	line-height: 1;
+	text-decoration: underline;
 }
 
-.modal-content .modal-info p {
-    font-size:1em;
+.modal-content p {
+	font-size:1em;
+	line-height:1.3em;
+	margin-top:10px;
 }
 
 /* Luk-knappen */
@@ -848,7 +890,7 @@ a.event-link{
 #countdown-wrapper{
 	background-image: url("img/kraemmermarked1.png");
 	background-size: cover;
-	
+
 
 }
 
@@ -866,7 +908,7 @@ a.event-link{
 	/*linear-gradient*/
   background: #3b5998;
   margin-right: -60px;
-  position: fixed; 
+  position: fixed;
   vertical-align:top;
   margin-top:50px;
   width:150px;height:45px;
@@ -900,3 +942,36 @@ z-index: 9999;
 
 
 /*--nav dropdown slut---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
