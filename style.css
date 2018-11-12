@@ -141,7 +141,8 @@ nav a#bliv-medlem {
     border: none;
     outline: none;
     color: black;
-    padding: 14px 16px;
+	height:42px;
+    padding: 0 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -419,7 +420,7 @@ background-image: url(images/1.jpg);
 	overflow: hidden;
 	height: 205px;
 	width: 728px;
-	margin: 32px auto;
+	margin: 64px auto;
 }
 .slide-wrapper {
 	width: 8008px;
@@ -427,7 +428,7 @@ background-image: url(images/1.jpg);
 }
 .slide {
 	float: left;
-	height: 410px;
+	height: 205px;
 	width: 728px;
 	background-size: contain;
 	background-position: center;
@@ -942,8 +943,6 @@ z-index: 9999;
 
 
 /*--nav dropdown slut---*/
-
-
 
 
 
