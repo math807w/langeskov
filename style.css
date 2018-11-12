@@ -619,7 +619,7 @@ form .submit:hover{
 	transition: height .4s;
 }
 
-.three-col button{
+.three-col > button{
 	height:400px;
 	font-size:1em;
 	border:none;
@@ -943,22 +943,6 @@ z-index: 9999;
 
 
 /*--nav dropdown slut---*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
