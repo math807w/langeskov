@@ -977,10 +977,15 @@ z-index: 9999;
 	margin-top:32px;
 }
 
+.kurv-overskrift{
+	padding:1em 0;
+}
+
 #vare-liste{
 	margin-top:0;
 	position: relative;
 	left:0;
+	top:0;
 	transition: left 0.5s;
 }
 
@@ -1040,10 +1045,11 @@ button#betaling-btn{
 
 /* Login info */
 #login-liste{
-	margin-top:0;
+	margin-top:-64px;
 	position: relative;
 	left:100vw;
 	transition: left 0.5s;
+	float:left;
 }
 
 .login-info{
@@ -1061,10 +1067,11 @@ button#betaling-btn{
 
 /* Betalingsform */
 #betalingsform-liste{
-	margin-top:-128px;
+	margin-top:-64px;
 	position: relative;
 	left:200vw;
 	transition: left 0.5s;
+	justify-self: flex-start;
 }
 
 .betalingsform{
@@ -1072,6 +1079,7 @@ button#betaling-btn{
 	background-color: #00A572;
 	height:220px;
 	align-items: center;
+	float:left;
 }
 .betalingsform form   {
 	width:50%;
@@ -1096,7 +1104,7 @@ input.betalingsform-btn{
 
 #dankort-felt{
 	border:1px solid #000;
-	height:200px;
+	height:auto;
 	width:60%;
 	padding:1em;
 	display: none;

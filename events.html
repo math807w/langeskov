@@ -272,6 +272,7 @@
             <p id="tom-kurv-besked"></p>
             <span class="close" id="close_kurv">&times;</span>
             <div id="vare-liste">
+                <h2 class="kurv-overskrift">Dine varer</h2>
                 <div class="vare">
                     <div>
                     <img height="100px" src="img/kvindehjemmet.jpg" />
@@ -287,13 +288,16 @@
                 </div>
                 <div id="dankort-felt">
                     Kort nr.<br/>
-                    <input type="text" value="Kort nr." id="kortnr"><br/><br/>
+                    <input type="text" placeholder="Kort nr." id="kortnr"><br/><br/>
                     Udløbsdato<br/>
-                    <input type="text" value="MM"><input type="text" value="YY">
+                    <input type="text" placeholder="MM"><input type="text" placeholder="YY"><br/><br/>
+                    CCV<br/>
+                    <input type="text" value="" placeholder="CCV">
                 </div>
             </div>
 
             <div id="login-liste">
+                <h2 class="kurv-overskrift">Login</h2>
                 <div class="login-info">
                     <form>
                         <input type="text" value="E-mail">
@@ -303,6 +307,7 @@
             </div>
 
             <div id="betalingsform-liste">
+                <h2 class="kurv-overskrift">Vælg betalingsform</h2>
                 <div class="betalingsform">
                     <form>
                             <span>Dankort<input type="radio" class="betalingsform-btn" value="Dankort"></span><br/>
@@ -318,6 +323,15 @@
 
 
 <script>
+
+        function delay(milliseconds) {
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > milliseconds){
+                    break;
+                }
+            }
+        }
 
 
         // Get the modal
