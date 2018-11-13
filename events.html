@@ -286,6 +286,15 @@
                     </div>
                 </div>
             </div>
+
+            <div id="login-liste">
+                <div class="login-info">
+                    <form>
+                        <input type="text" value="E-mail">
+                        <input type="text" value="Adgangskode">
+                    </form>
+                </div>
+            </div>
             <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Gå til betaling</button>
         </div>
     </div>
@@ -426,6 +435,17 @@
             eventBestilBtn3.style.backgroundColor = "green";
             eventBestilBtn3.innerText = "Lagt i kurv! ✓";
             putVarerIKurv();
+        }
+
+
+        var betalingBtn = document.getElementById('betaling-btn');
+        var vareListe = document.getElementById('vare-liste');
+        var loginListe = document.getElementById('login-liste');
+
+        betalingBtn.onclick = function(){
+            vareListe.style.left = "-100vw";
+            loginListe.style.right = "0";
+
         }
 
 
