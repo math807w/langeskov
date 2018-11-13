@@ -978,7 +978,7 @@ z-index: 9999;
 }
 
 #vare-liste{
-	margin-top:64px;
+	margin-top:0;
 	position: relative;
 	left:0;
 	transition: left 0.5s;
@@ -1040,10 +1040,75 @@ button#betaling-btn{
 
 /* Login info */
 #login-liste{
-	margin-top:64px;
+	margin-top:0;
 	position: relative;
-	right:100vw;
-	transition: right 0.5s;
+	left:100vw;
+	transition: left 0.5s;
+}
+
+.login-info{
+	display: grid;
+	background-color: #00A572;
+	height:140px;
+	align-items: center;
+}
+.login-info form input {
+	width:50%;
+	font-size: 1em;
+	margin:.5em 0;
+	margin-left:1em;
+}
+
+/* Betalingsform */
+#betalingsform-liste{
+	margin-top:-128px;
+	position: relative;
+	left:200vw;
+	transition: left 0.5s;
+}
+
+.betalingsform{
+	display: grid;
+	background-color: #00A572;
+	height:220px;
+	align-items: center;
+}
+.betalingsform form   {
+	width:50%;
+	height:220px;
+	font-size: 1em;
+	padding-left:1em;
+	margin-top:1em;
+	align-self: center;
+}
+
+.betalingsform form span{
+	background-color: #fefefe;
+	padding:.5em;
+	display: flex;
+	align-items:center;
+}
+
+input.betalingsform-btn{
+	font-size:4em;
+	margin-left:10px;
+}
+
+#dankort-felt{
+	border:1px solid #000;
+	height:200px;
+	width:60%;
+	padding:1em;
+	display: none;
+	margin-top:32px;
+}
+
+#dankort-felt input{
+	width:calc(25% - 9px);
+}
+
+#dankort-felt input#kortnr{
+	width:50%;
 }
 
 /*-- Indkøbskurv Modal Slut---*/
