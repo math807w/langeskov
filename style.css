@@ -1039,17 +1039,16 @@ z-index: 9999;
 button#betaling-btn{
 	position:absolute;
 	top:65%;
-	right:20%;
+	left:calc(1100px - 8%);
 }
 
 
 /* Login info */
 #login-liste{
-	margin-top:-64px;
+	margin-top:-190px;
 	position: relative;
 	left:100vw;
 	transition: left 0.5s;
-	float:left;
 }
 
 .login-info{
@@ -1067,11 +1066,10 @@ button#betaling-btn{
 
 /* Betalingsform */
 #betalingsform-liste{
-	margin-top:-64px;
 	position: relative;
 	left:200vw;
 	transition: left 0.5s;
-	justify-self: flex-start;
+	margin-top:calc(-220px + 32px);
 }
 
 .betalingsform{
@@ -1079,7 +1077,6 @@ button#betaling-btn{
 	background-color: #00A572;
 	height:220px;
 	align-items: center;
-	float:left;
 }
 .betalingsform form   {
 	width:50%;
@@ -1117,6 +1114,11 @@ input.betalingsform-btn{
 
 #dankort-felt input#kortnr{
 	width:50%;
+}
+
+
+#betalingdone-liste{
+	display: none;
 }
 
 /*-- Indkøbskurv Modal Slut---*/

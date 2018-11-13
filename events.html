@@ -300,8 +300,8 @@
                 <h2 class="kurv-overskrift">Login</h2>
                 <div class="login-info">
                     <form>
-                        <input type="text" value="E-mail">
-                        <input type="text" value="Adgangskode">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Adgangskode">
                     </form>
                 </div>
             </div>
@@ -316,7 +316,16 @@
                     </form>
                 </div>
             </div>
-            <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Gå til betaling</button>
+
+            <div id="betalingdone-liste">
+                <h2 class="kurv-overskrift">Køb gennemført!</h2>
+                <div class="betaling-done">
+                    <p>Betalingen er gennemført. Tak for dit køb!<br/><br/>
+                        Du kan nu lukke vinduet.
+                    </p>
+                </div>
+            </div>
+            <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Fortsæt</button>
         </div>
     </div>
 </div>
@@ -476,6 +485,8 @@
         var vareListe = document.getElementById('vare-liste');
         var loginListe = document.getElementById('login-liste');
         var betalingListe = document.getElementById('betalingsform-liste');
+        var betalingDone = document.getElementById('betalingdone-liste');
+
 
         var kurvState = 0;
 
@@ -495,7 +506,18 @@
                 vareListe.style.left = "0";
                 loginListe.style.left = "-100vw";
                 betalingListe.style.left = "-100vw";
-
+                betalingBtn.innerText    = "Betal >";
+            }
+            else if (kurvState == 3) {
+                dankortFelt.style.display = "none";
+                vareListe.style.display = "none";
+                loginListe.style.display = "none";
+                betalingListe.style.display = "none";
+                betalingDone.style.display = "block";
+                betalingBtn.innerText    = "Luk vindue";
+            }
+            else if (kurvState == 4) {
+                document.getElementById("kurvmodal").style.display = "none";
             }
         }
 
