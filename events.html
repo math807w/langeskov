@@ -326,6 +326,7 @@
                     </p>
                 </div>
             </div>
+            <button type="button" id="betaling-back-btn" class="event-input-antal-submit" value="Fortsæt">Tilbage</button>
             <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Fortsæt</button>
         </div>
     </div>
@@ -482,6 +483,7 @@
 
 
         var betalingBtn = document.getElementById('betaling-btn');
+        var betalingBackBtn = document.getElementById('betaling-back-btn');
 
         var vareListe = document.getElementById('vare-liste');
         var loginListe = document.getElementById('login-liste');
@@ -520,6 +522,10 @@
             else if (kurvState == 4) {
                 document.getElementById("kurvmodal").style.display = "none";
             }
+        }
+
+        betalingBackBtn.onclick = function() {
+            
         }
 
         betalingBtn.onclick = function(){

@@ -1042,6 +1042,12 @@ button#betaling-btn{
 	right: calc((1100px / 2));
 }
 
+button#betaling-back-btn{
+	position:absolute;
+	top:55%;
+	right: calc((1100px / 2) + 130px);
+}
+
 
 /* Login info */
 #login-liste{
