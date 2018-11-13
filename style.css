@@ -1039,7 +1039,7 @@ z-index: 9999;
 button#betaling-btn{
 	position:absolute;
 	top:65%;
-	left:calc(1100px - 8%);
+	right: 20vw;
 }
 
 
