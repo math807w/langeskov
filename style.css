@@ -417,6 +417,7 @@ background-image: url(images/1.jpg);
 #fp-col-3 #fp-kontakt-img {
 	background-image: url(images/3.jpg);
 }
+markeds-kort-sv.jpg
 #fp-col-3 {
 }
 #fp-col-3:hover .col-title-text p{
@@ -754,10 +755,7 @@ a.event-link{
 }
 
 .modal-content .modal-text div{
-
 	padding:2.5em;
-
-
 }
 
 .modal-content .modal-info {
@@ -876,6 +874,10 @@ button.event-input-antal-submit {
 }
 
 /* --- KRÆMMERMARKED SIDE --- */
+#fp-col-3 #kr-kort-img {
+	background-image: url("img/markeds-kort.jpg")
+}
+
 /* Countdown */
 #countdown-timer {
     text-align: center;
