@@ -328,8 +328,10 @@
                     </p>
                 </div>
             </div>
-            <button type="button" id="betaling-back-btn" class="event-input-antal-submit" value="Fortsæt">Tilbage</button>
-            <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Fortsæt</button>
+            <div id="kurv-knapper">
+                <button type="button" id="betaling-back-btn" class="event-input-antal-submit" value="Fortsæt">Tilbage</button>
+                <button type="button" id="betaling-btn" class="event-input-antal-submit" value="Fortsæt">Fortsæt</button>
+            </div>
         </div>
     </div>
 </div>
@@ -509,9 +511,10 @@
             else if (kurvState == 2) {
                 dankortFelt.style.display = "block";
                 vareListe.style.left = "0";
-                loginListe.style.left = "-100vw";
-                betalingListe.style.left = "-100vw";
+                loginListe.style.display = "none";
+                betalingListe.style.display = "none";
                 betalingBtn.innerText    = "Betal >";
+                document.getElementById('kurv-knapper').style.marginTop = "";
             }
             else if (kurvState == 3) {
                 dankortFelt.style.display = "none";
