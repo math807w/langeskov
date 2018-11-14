@@ -1117,7 +1117,7 @@ input#rotate {
 
 #kurv-knapper{
     position: absolute;
-    top:685px;
+    top:665px;
     right:calc(50vw - 420px);
     z-index:99999;
 }
