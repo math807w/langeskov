@@ -200,7 +200,7 @@ nav a#bliv-medlem {
     display: block;
 }
 nav ul{
-    background-color:none;
+    background-color: transparent;
 }
 
 nav ul a li{
