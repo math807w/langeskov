@@ -417,7 +417,7 @@ section.three-col-container .three-col .col-title-text {
 
 /* Forside: Events-card */
 #fp-col-1 #fp-event-img {
-    background-image: url(images/1.jpg);
+    background-image: url(img/4.jpg);
 }
 
 #fp-col-1 {
@@ -428,7 +428,7 @@ section.three-col-container .three-col .col-title-text {
 }
 
 #fp-col-2 #fp-kraemmer-img {
-    background-image: url(images/2.jpg);
+    background-image: url(img/1.jpg);
 }
 
 #fp-col-2 {
@@ -439,7 +439,7 @@ section.three-col-container .three-col .col-title-text {
 }
 
 #fp-col-3 #fp-kontakt-img {
-    background-image: url(images/3.jpg);
+    background-image: url(img/5.jpg);
 }
 
 #fp-col-3 {
