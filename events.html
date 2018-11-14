@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <title>Events</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="onclick.js"></script>
-    <style type="text/css">
-
-    </style>
-
 </head>
 
 <body>
@@ -24,7 +20,7 @@
     <nav>
         <div id="top-logo">
             <a href="index.html">
-                <img src="img/logo_wide.jpg">
+                <img src="img/logo_wide.jpg" alt="logo">
             </a>
         </div>
         <ul id="nav-menu">
@@ -34,7 +30,7 @@
             <a href="kraemmer.html"><li>Kræmmermarked</li></a>
             <a href="#"><li>Om os</li></a>
             <a href="#"><li>Kontakt</li></a>
-            <button id="kurvBtn"><a class="" id="kurv" href="#"><li><div id="varer-i-kurv-container"><p id="varer-i-kurv">0</p></div><img src="images/kurv.png"></li></a></button>
+            <button id="kurvBtn"><a class="" id="kurv" href="#"><li><div id="varer-i-kurv-container"><p id="varer-i-kurv">0</p></div><img src="images/kurv.png" alt="kurv"></li></a></button>
         </ul>
         <ul id="login-menu">
             <div class="dropdown">
@@ -255,7 +251,7 @@
             <h2>Kontaktformular:</h2>
         </div>
         <div class="contact-form">
-            <form id="contact-form" method="post" action="">
+            <form id="contact-form" method="post">
                 <input name="name" type="text" class="form-control" placeholder="Dit navn" required>
                 <br>
                 <input name="email" type="email" class="form-control" placeholder="Din Email" required>
@@ -281,7 +277,7 @@
                 <h2 class="kurv-overskrift">Dine varer</h2>
                 <div class="vare">
                     <div>
-                    <img height="100px" src="img/kvindehjemmet.jpg" />
+                    <img height="100px" src="img/kvindehjemmet.jpg" alt="kvindehjemmet" />
                         <span>Foredrag med Carsten Egø:<br/>Pigerne på Sprogø<br/><br/><br/>D.23/10 kl. 19:00</span>
                     </div>
                     <div><button id="vare-delete">X</button></div>
@@ -307,7 +303,7 @@
                 <div class="login-info">
                     <form>
                         <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Adgangskode">
+                        <input type="password" placeholder="Adgangskode">
                     </form>
                 </div>
             </div>
