@@ -1115,19 +1115,19 @@ input#rotate {
     margin-left: 1em;
 }
 
-#kurv-knapper{
+#kurv-knapper {
     position: absolute;
-    top:635px;
-    right:calc(50vw - 420px);
-    z-index:99999;
+    top: 635px;
+    right: calc(50vw - 420px);
+    z-index: 99999;
 }
 
 button#betaling-btn {
-    float:right;
+    float: right;
 }
 
 button#betaling-back-btn {
-    float:left;
+    float: left;
 }
 
 /* Login info */
@@ -1168,7 +1168,7 @@ button#betaling-back-btn {
 }
 
 .betalingsform form {
-    width:50%;
+    width: 50%;
     font-size: 1em;
     padding-left: 1em;
     align-self: center;
@@ -1193,7 +1193,7 @@ input.betalingsform-btn {
     padding: 1em;
     display: none;
     margin-top: 32px;
-    clear:both;
+    clear: both;
 }
 
 #dankort-felt input {
@@ -1209,19 +1209,5 @@ input.betalingsform-btn {
 }
 
 /*-- Indkøbskurv Modal Slut---*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
