@@ -357,7 +357,6 @@ main {
 .three-col-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    text-align: center;
     grid-column-gap: 5%;
     margin-top: 32px;
 }
